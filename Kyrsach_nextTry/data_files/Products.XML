@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<ArrayOfValueTupleOfProductInt32 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ValueTupleOfProductInt32>
+    <Item1>
+      <Name>Chainik</Name>
+      <Price>123.3</Price>
+      <Info />
+    </Item1>
+    <Item2>1</Item2>
+  </ValueTupleOfProductInt32>
+  <ValueTupleOfProductInt32>
+    <Item1>
+      <Name>Polotence</Name>
+      <Price>12.3</Price>
+      <Info />
+    </Item1>
+    <Item2>1</Item2>
+  </ValueTupleOfProductInt32>
+  <ValueTupleOfProductInt32>
+    <Item1>
+      <Name>KOver</Name>
+      <Price>68</Price>
+      <Info>sdkkgakgnmfk</Info>
+    </Item1>
+    <Item2>12</Item2>
+  </ValueTupleOfProductInt32>
+  <ValueTupleOfProductInt32>
+    <Item1>
+      <Name>Automobile</Name>
+      <Price>3000</Price>
+      <Info>jsdhjsdbfjsdb</Info>
+    </Item1>
+    <Item2>2</Item2>
+  </ValueTupleOfProductInt32>
+  <ValueTupleOfProductInt32>
+    <Item1>
+      <Name>mobile</Name>
+      <Price>8563.5</Price>
+      <Info>mobile?</Info>
+    </Item1>
+    <Item2>500</Item2>
+  </ValueTupleOfProductInt32>
+  <ValueTupleOfProductInt32>
+    <Item1>
+      <Name>chasi</Name>
+      <Price>12</Price>
+      <Info>fhfhfhfhfh</Info>
+    </Item1>
+    <Item2>57</Item2>
+  </ValueTupleOfProductInt32>
+  <ValueTupleOfProductInt32>
+    <Item1>
+      <Name>rezinovi paloka</Name>
+      <Price>666</Price>
+      <Info>rezinka</Info>
+    </Item1>
+    <Item2>100</Item2>
+  </ValueTupleOfProductInt32>
+</ArrayOfValueTupleOfProductInt32>
