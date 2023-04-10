@@ -14,6 +14,7 @@ namespace Kyrsach_nextTry
 	public partial class Form1 : Form
 	{
 		List<User> users;
+		List<string> choose_items;
 		public Form1()
 		{
 			InitializeComponent();
@@ -23,10 +24,6 @@ namespace Kyrsach_nextTry
 		{
 			EnterAllAccessFromDataToRoleCb();
 			show_all_persons();
-			StotreCeeperWindow stotreCeeperWindow = new StotreCeeperWindow();
-			stotreCeeperWindow.Show();
-			SellerWindow sellerWindow = new SellerWindow();
-			sellerWindow.Show();
 		}
 		private void EnterAllAccessFromDataToRoleCb()
 		{
@@ -52,22 +49,32 @@ namespace Kyrsach_nextTry
 		private void delete_btn_Click(object sender, EventArgs e)
 		{
 			List<User> users = MyData.LoadUsers();
+			List<User> delete_users = new List<User>();
+
 			File.Delete(User.Path);
-			for (int i =0;i< person_listV.SelectedItems.Count; i++)
-			{
-				users.RemoveAt(person_listV.Items.IndexOf(person_listV.SelectedItems[i]));
-			}
+			for (int i = 0; i < persons_lv.SelectedItems.Count; i++)
+				delete_users.Add(users[persons_lv.Items.IndexOf(persons_lv.SelectedItems[i])]);
+			for (int i = 0; i < persons_lv.SelectedItems.Count; i++)
+				users.Remove(delete_users[i]);
+			delete_users.Clear();
 
 			MyData.SaveList(users);
 			show_all_persons();
 		}
 		void show_all_persons()
 		{
-			person_listV.Items.Clear();
+			persons_lv.Items.Clear();
 			List<User> users = MyData.LoadUsers();
-			if(users!=null)
+			if (users != null)
 				for (int i = 0; i < users.Count; i++)
-					person_listV.Items.Add(users[i].Login + " (" + users[i].Access + ");");
+					persons_lv.Items.Add(users[i].Login + " (" + users[i].Access + ");");
+		}
+
+		private void show_btn_Click(object sender, EventArgs e)
+		{
+			List<User> users = MyData.LoadUsers();
+			for (int i = 0; i < persons_lv.SelectedItems.Count; i++)
+				MessageBox.Show(Convert.ToString(users[persons_lv.Items.IndexOf(persons_lv.SelectedItems[i])].ToString()));
 		}
 	}
 }

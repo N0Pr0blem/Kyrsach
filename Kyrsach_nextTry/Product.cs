@@ -25,7 +25,7 @@ namespace Kyrsach_nextTry
 
 		public override bool Equals(object obj)
 		{
-			return base.Equals(obj);
+			return (((Product)obj).Name== Name && ((Product)obj).Price == Price && ((Product)obj).Info == Info);
 		}
 
 		public override string ToString()

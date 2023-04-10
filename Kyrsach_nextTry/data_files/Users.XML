@@ -7,4 +7,18 @@
     <Password>60214809</Password>
     <Access>ADMIN</Access>
   </User>
+  <User>
+    <Name>1</Name>
+    <Surname>1</Surname>
+    <Login>1</Login>
+    <Password>1</Password>
+    <Access>STOREKEEPER</Access>
+  </User>
+  <User>
+    <Name>q</Name>
+    <Surname>q</Surname>
+    <Login>q</Login>
+    <Password>q</Password>
+    <Access>SELLER</Access>
+  </User>
 </ArrayOfUser>

@@ -41,9 +41,10 @@
 			this.label6 = new System.Windows.Forms.Label();
 			this.add_btn = new System.Windows.Forms.Button();
 			this.add_new_panel = new System.Windows.Forms.Panel();
-			this.person_listV = new System.Windows.Forms.ListView();
+			this.persons_lv = new System.Windows.Forms.ListView();
 			this.delete_btn = new System.Windows.Forms.Button();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.show_btn = new System.Windows.Forms.Button();
 			this.add_new_panel.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
@@ -179,16 +180,16 @@
 			this.add_new_panel.Size = new System.Drawing.Size(391, 358);
 			this.add_new_panel.TabIndex = 4;
 			// 
-			// person_listV
+			// persons_lv
 			// 
-			this.person_listV.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.person_listV.HideSelection = false;
-			this.person_listV.Location = new System.Drawing.Point(20, 12);
-			this.person_listV.Name = "person_listV";
-			this.person_listV.Size = new System.Drawing.Size(292, 286);
-			this.person_listV.TabIndex = 5;
-			this.person_listV.UseCompatibleStateImageBehavior = false;
-			this.person_listV.View = System.Windows.Forms.View.List;
+			this.persons_lv.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.persons_lv.HideSelection = false;
+			this.persons_lv.Location = new System.Drawing.Point(20, 12);
+			this.persons_lv.Name = "persons_lv";
+			this.persons_lv.Size = new System.Drawing.Size(292, 286);
+			this.persons_lv.TabIndex = 5;
+			this.persons_lv.UseCompatibleStateImageBehavior = false;
+			this.persons_lv.View = System.Windows.Forms.View.List;
 			// 
 			// delete_btn
 			// 
@@ -203,19 +204,31 @@
 			// 
 			// panel1
 			// 
-			this.panel1.Controls.Add(this.person_listV);
+			this.panel1.Controls.Add(this.persons_lv);
 			this.panel1.Controls.Add(this.delete_btn);
 			this.panel1.Location = new System.Drawing.Point(438, 12);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(329, 358);
 			this.panel1.TabIndex = 6;
 			// 
+			// show_btn
+			// 
+			this.show_btn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.show_btn.Location = new System.Drawing.Point(333, 396);
+			this.show_btn.Name = "show_btn";
+			this.show_btn.Size = new System.Drawing.Size(176, 32);
+			this.show_btn.TabIndex = 4;
+			this.show_btn.Text = "Show Info:";
+			this.show_btn.UseVisualStyleBackColor = true;
+			this.show_btn.Click += new System.EventHandler(this.show_btn_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(784, 383);
+			this.ClientSize = new System.Drawing.Size(784, 468);
 			this.Controls.Add(this.panel1);
+			this.Controls.Add(this.show_btn);
 			this.Controls.Add(this.add_new_panel);
 			this.Name = "Form1";
 			this.Text = "Admin window";
@@ -242,9 +255,10 @@
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Button add_btn;
 		private System.Windows.Forms.Panel add_new_panel;
-		private System.Windows.Forms.ListView person_listV;
+		private System.Windows.Forms.ListView persons_lv;
 		private System.Windows.Forms.Button delete_btn;
 		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.Button show_btn;
 	}
 }
 

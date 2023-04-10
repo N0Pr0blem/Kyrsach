@@ -31,10 +31,13 @@
 			this.products_lv = new System.Windows.Forms.ListView();
 			this.buy_products_lv = new System.Windows.Forms.ListView();
 			this.load_products_btn = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.label1 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.button3 = new System.Windows.Forms.Button();
+			this.buy_btn = new System.Windows.Forms.Button();
+			this.final_price_main_lb = new System.Windows.Forms.Label();
+			this.final_price_lb = new System.Windows.Forms.Label();
+			this.clean_btn = new System.Windows.Forms.Button();
+			this.new_price_lb = new System.Windows.Forms.Label();
+			this.new_price_tb = new System.Windows.Forms.TextBox();
+			this.new_price_btn = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// products_lv
@@ -58,6 +61,7 @@
 			this.buy_products_lv.TabIndex = 1;
 			this.buy_products_lv.UseCompatibleStateImageBehavior = false;
 			this.buy_products_lv.View = System.Windows.Forms.View.List;
+			this.buy_products_lv.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Buy_products_lv_MouseClick);
 			// 
 			// load_products_btn
 			// 
@@ -67,56 +71,91 @@
 			this.load_products_btn.TabIndex = 2;
 			this.load_products_btn.Text = "->";
 			this.load_products_btn.UseVisualStyleBackColor = true;
+			this.load_products_btn.Click += new System.EventHandler(this.Load_products_btn_Click);
 			// 
-			// button2
+			// buy_btn
 			// 
-			this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.button2.Location = new System.Drawing.Point(880, 217);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(129, 36);
-			this.button2.TabIndex = 3;
-			this.button2.Text = "Buy";
-			this.button2.UseVisualStyleBackColor = true;
+			this.buy_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.buy_btn.Location = new System.Drawing.Point(859, 330);
+			this.buy_btn.Name = "buy_btn";
+			this.buy_btn.Size = new System.Drawing.Size(129, 36);
+			this.buy_btn.TabIndex = 3;
+			this.buy_btn.Text = "Buy";
+			this.buy_btn.UseVisualStyleBackColor = true;
+			this.buy_btn.Click += new System.EventHandler(this.Buy_Click);
 			// 
-			// label1
+			// final_price_main_lb
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label1.Location = new System.Drawing.Point(862, 138);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(96, 39);
-			this.label1.TabIndex = 4;
-			this.label1.Text = "Cost:";
+			this.final_price_main_lb.AutoSize = true;
+			this.final_price_main_lb.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.final_price_main_lb.Location = new System.Drawing.Point(841, 251);
+			this.final_price_main_lb.Name = "final_price_main_lb";
+			this.final_price_main_lb.Size = new System.Drawing.Size(94, 38);
+			this.final_price_main_lb.TabIndex = 4;
+			this.final_price_main_lb.Text = "Cost:";
 			// 
-			// label2
+			// final_price_lb
 			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label2.Location = new System.Drawing.Point(973, 138);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(36, 39);
-			this.label2.TabIndex = 4;
-			this.label2.Text = "0";
+			this.final_price_lb.AutoSize = true;
+			this.final_price_lb.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.final_price_lb.Location = new System.Drawing.Point(952, 251);
+			this.final_price_lb.Name = "final_price_lb";
+			this.final_price_lb.Size = new System.Drawing.Size(35, 38);
+			this.final_price_lb.TabIndex = 4;
+			this.final_price_lb.Text = "0";
 			// 
-			// button3
+			// clean_btn
 			// 
-			this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.button3.Location = new System.Drawing.Point(880, 276);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(129, 36);
-			this.button3.TabIndex = 3;
-			this.button3.Text = "Clear";
-			this.button3.UseVisualStyleBackColor = true;
+			this.clean_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.clean_btn.Location = new System.Drawing.Point(859, 389);
+			this.clean_btn.Name = "clean_btn";
+			this.clean_btn.Size = new System.Drawing.Size(129, 36);
+			this.clean_btn.TabIndex = 3;
+			this.clean_btn.Text = "Clear";
+			this.clean_btn.UseVisualStyleBackColor = true;
+			this.clean_btn.Click += new System.EventHandler(this.Clean_Click);
+			// 
+			// new_price_lb
+			// 
+			this.new_price_lb.AutoSize = true;
+			this.new_price_lb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.new_price_lb.Location = new System.Drawing.Point(904, 57);
+			this.new_price_lb.Name = "new_price_lb";
+			this.new_price_lb.Size = new System.Drawing.Size(22, 27);
+			this.new_price_lb.TabIndex = 5;
+			this.new_price_lb.Text = "1";
+			// 
+			// new_price_tb
+			// 
+			this.new_price_tb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.new_price_tb.Location = new System.Drawing.Point(798, 52);
+			this.new_price_tb.Name = "new_price_tb";
+			this.new_price_tb.Size = new System.Drawing.Size(100, 34);
+			this.new_price_tb.TabIndex = 6;
+			// 
+			// new_price_btn
+			// 
+			this.new_price_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.new_price_btn.Location = new System.Drawing.Point(932, 52);
+			this.new_price_btn.Name = "new_price_btn";
+			this.new_price_btn.Size = new System.Drawing.Size(88, 37);
+			this.new_price_btn.TabIndex = 3;
+			this.new_price_btn.Text = "Set";
+			this.new_price_btn.UseVisualStyleBackColor = true;
+			this.new_price_btn.Click += new System.EventHandler(this.New_price_btn_Click);
 			// 
 			// SellerWindow
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1084, 577);
-			this.Controls.Add(this.label2);
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.button3);
-			this.Controls.Add(this.button2);
+			this.Controls.Add(this.new_price_tb);
+			this.Controls.Add(this.new_price_lb);
+			this.Controls.Add(this.final_price_lb);
+			this.Controls.Add(this.final_price_main_lb);
+			this.Controls.Add(this.clean_btn);
+			this.Controls.Add(this.new_price_btn);
+			this.Controls.Add(this.buy_btn);
 			this.Controls.Add(this.load_products_btn);
 			this.Controls.Add(this.buy_products_lv);
 			this.Controls.Add(this.products_lv);
@@ -133,9 +172,12 @@
 		private System.Windows.Forms.ListView products_lv;
 		private System.Windows.Forms.ListView buy_products_lv;
 		private System.Windows.Forms.Button load_products_btn;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Button button3;
+		private System.Windows.Forms.Button buy_btn;
+		private System.Windows.Forms.Label final_price_main_lb;
+		private System.Windows.Forms.Label final_price_lb;
+		private System.Windows.Forms.Button clean_btn;
+		private System.Windows.Forms.Label new_price_lb;
+		private System.Windows.Forms.TextBox new_price_tb;
+		private System.Windows.Forms.Button new_price_btn;
 	}
 }

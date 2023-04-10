@@ -29,10 +29,10 @@
 		private void InitializeComponent()
 		{
 			this.button1 = new System.Windows.Forms.Button();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.password_tb = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
-			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.login_tb = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
@@ -45,14 +45,15 @@
 			this.button1.TabIndex = 0;
 			this.button1.Text = "Logg in";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
-			// textBox1
+			// password_tb
 			// 
-			this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox1.Location = new System.Drawing.Point(136, 128);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(212, 34);
-			this.textBox1.TabIndex = 1;
+			this.password_tb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.password_tb.Location = new System.Drawing.Point(136, 128);
+			this.password_tb.Name = "password_tb";
+			this.password_tb.Size = new System.Drawing.Size(212, 34);
+			this.password_tb.TabIndex = 1;
 			// 
 			// label1
 			// 
@@ -74,13 +75,13 @@
 			this.label2.TabIndex = 4;
 			this.label2.Text = "Login:";
 			// 
-			// textBox2
+			// login_tb
 			// 
-			this.textBox2.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox2.Location = new System.Drawing.Point(136, 87);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(212, 34);
-			this.textBox2.TabIndex = 3;
+			this.login_tb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.login_tb.Location = new System.Drawing.Point(136, 87);
+			this.login_tb.Name = "login_tb";
+			this.login_tb.Size = new System.Drawing.Size(212, 34);
+			this.login_tb.TabIndex = 3;
 			// 
 			// label3
 			// 
@@ -99,9 +100,9 @@
 			this.ClientSize = new System.Drawing.Size(412, 247);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
-			this.Controls.Add(this.textBox2);
+			this.Controls.Add(this.login_tb);
 			this.Controls.Add(this.label1);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.password_tb);
 			this.Controls.Add(this.button1);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
@@ -115,10 +116,10 @@
 		#endregion
 
 		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox password_tb;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.TextBox textBox2;
+		private System.Windows.Forms.TextBox login_tb;
 		private System.Windows.Forms.Label label3;
 	}
 }

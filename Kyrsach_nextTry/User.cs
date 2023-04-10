@@ -28,11 +28,15 @@ namespace Kyrsach_nextTry
 
 		public override string ToString()
 		{
-			return Convert.ToString(($"{0}, {1}, {2}, {3}.", Name, Surname, Login, Password));
+			return Convert.ToString($"{Name}, {Surname}, {Login}, {Password}.");
 		}
 		public override bool Equals(object obj)
 		{
 			return (Name == ((User)obj).Name && Surname == ((User)obj).Surname && Login == ((User)obj).Login && Password == ((User)obj).Password);
+		}
+		public string GetMainInfo()
+		{
+			return Convert.ToString($"{Login} {Password}");
 		}
 	}
 }

@@ -43,10 +43,10 @@
   <ValueTupleOfProductInt32>
     <Item1>
       <Name>chasi</Name>
-      <Price>12</Price>
-      <Info>fhfhfhfhfh</Info>
+      <Price>123</Price>
+      <Info>qwertyuio</Info>
     </Item1>
-    <Item2>57</Item2>
+    <Item2>60</Item2>
   </ValueTupleOfProductInt32>
   <ValueTupleOfProductInt32>
     <Item1>
@@ -55,5 +55,13 @@
       <Info>rezinka</Info>
     </Item1>
     <Item2>100</Item2>
+  </ValueTupleOfProductInt32>
+  <ValueTupleOfProductInt32>
+    <Item1>
+      <Name>Milk</Name>
+      <Price>60</Price>
+      <Info>Leshin lubimi product and my</Info>
+    </Item1>
+    <Item2>1</Item2>
   </ValueTupleOfProductInt32>
 </ArrayOfValueTupleOfProductInt32>
