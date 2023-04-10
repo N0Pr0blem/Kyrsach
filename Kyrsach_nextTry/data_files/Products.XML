@@ -6,7 +6,7 @@
       <Price>123.3</Price>
       <Info />
     </Item1>
-    <Item2>1</Item2>
+    <Item2>1234</Item2>
   </ValueTupleOfProductInt32>
   <ValueTupleOfProductInt32>
     <Item1>
@@ -14,7 +14,7 @@
       <Price>12.3</Price>
       <Info />
     </Item1>
-    <Item2>1</Item2>
+    <Item2>0</Item2>
   </ValueTupleOfProductInt32>
   <ValueTupleOfProductInt32>
     <Item1>
@@ -22,15 +22,15 @@
       <Price>68</Price>
       <Info>sdkkgakgnmfk</Info>
     </Item1>
-    <Item2>12</Item2>
+    <Item2>11</Item2>
   </ValueTupleOfProductInt32>
   <ValueTupleOfProductInt32>
     <Item1>
       <Name>Automobile</Name>
-      <Price>3000</Price>
-      <Info>jsdhjsdbfjsdb</Info>
+      <Price>12345</Price>
+      <Info>qwerty</Info>
     </Item1>
-    <Item2>2</Item2>
+    <Item2>1</Item2>
   </ValueTupleOfProductInt32>
   <ValueTupleOfProductInt32>
     <Item1>
@@ -38,7 +38,7 @@
       <Price>8563.5</Price>
       <Info>mobile?</Info>
     </Item1>
-    <Item2>500</Item2>
+    <Item2>499</Item2>
   </ValueTupleOfProductInt32>
   <ValueTupleOfProductInt32>
     <Item1>
@@ -46,7 +46,7 @@
       <Price>123</Price>
       <Info>qwertyuio</Info>
     </Item1>
-    <Item2>60</Item2>
+    <Item2>59</Item2>
   </ValueTupleOfProductInt32>
   <ValueTupleOfProductInt32>
     <Item1>
@@ -54,7 +54,7 @@
       <Price>666</Price>
       <Info>rezinka</Info>
     </Item1>
-    <Item2>100</Item2>
+    <Item2>43</Item2>
   </ValueTupleOfProductInt32>
   <ValueTupleOfProductInt32>
     <Item1>
@@ -62,6 +62,6 @@
       <Price>60</Price>
       <Info>Leshin lubimi product and my</Info>
     </Item1>
-    <Item2>1</Item2>
+    <Item2>0</Item2>
   </ValueTupleOfProductInt32>
 </ArrayOfValueTupleOfProductInt32>

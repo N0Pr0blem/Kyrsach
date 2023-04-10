@@ -33,6 +33,8 @@ namespace Kyrsach_nextTry
 			new_info_btn.Visible = false;
 			new_info_rtb.Visible = false; 
 			product_info_panel.Visible = false;
+			add_new_panel.Visible = false;
+
 		}
 		private void ReloadProducts()
 		{
@@ -72,6 +74,7 @@ namespace Kyrsach_nextTry
 		private void products_pv_MouseClick(object sender, MouseEventArgs e)
 		{
 			product_info_panel.Visible = true;
+			add_new_panel.Visible = false;
 			products = MyData.LoadProducts();
 			product_index = products_pv.Items.IndexOf(products_pv.SelectedItems[0]);
 			product = products[product_index];
@@ -136,6 +139,11 @@ namespace Kyrsach_nextTry
 			File.Delete(Product.Path);
 			MyData.SaveList(products);
 			ReloadProducts();
+		}
+
+		private void Add_new_btn(object sender, EventArgs e)
+		{
+			add_new_panel.Visible = true;
 		}
 	}
 }

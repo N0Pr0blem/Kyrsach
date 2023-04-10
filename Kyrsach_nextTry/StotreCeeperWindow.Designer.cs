@@ -37,7 +37,7 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.info_rtb = new System.Windows.Forms.RichTextBox();
-			this.panel1 = new System.Windows.Forms.Panel();
+			this.add_new_panel = new System.Windows.Forms.Panel();
 			this.count_tb = new System.Windows.Forms.TextBox();
 			this.count_lb = new System.Windows.Forms.Label();
 			this.add_products_lv = new System.Windows.Forms.ListView();
@@ -61,15 +61,17 @@
 			this.new_price_btn = new System.Windows.Forms.Button();
 			this.new_info_btn = new System.Windows.Forms.Button();
 			this.new_count_btn = new System.Windows.Forms.Button();
-			this.panel1.SuspendLayout();
+			this.add_new_btn = new System.Windows.Forms.Button();
+			this.add_new_panel.SuspendLayout();
 			this.product_info_panel.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// add_btn
 			// 
+			this.add_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.add_btn.Location = new System.Drawing.Point(202, 369);
 			this.add_btn.Name = "add_btn";
-			this.add_btn.Size = new System.Drawing.Size(75, 23);
+			this.add_btn.Size = new System.Drawing.Size(75, 33);
 			this.add_btn.TabIndex = 0;
 			this.add_btn.Text = "Add";
 			this.add_btn.UseVisualStyleBackColor = true;
@@ -89,7 +91,7 @@
 			// 
 			this.products_pv.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.products_pv.HideSelection = false;
-			this.products_pv.Location = new System.Drawing.Point(798, 25);
+			this.products_pv.Location = new System.Drawing.Point(12, 12);
 			this.products_pv.Name = "products_pv";
 			this.products_pv.Size = new System.Drawing.Size(264, 423);
 			this.products_pv.TabIndex = 2;
@@ -152,22 +154,22 @@
 			this.info_rtb.TabIndex = 8;
 			this.info_rtb.Text = "";
 			// 
-			// panel1
+			// add_new_panel
 			// 
-			this.panel1.Controls.Add(this.count_tb);
-			this.panel1.Controls.Add(this.count_lb);
-			this.panel1.Controls.Add(this.name_tb);
-			this.panel1.Controls.Add(this.info_rtb);
-			this.panel1.Controls.Add(this.add_btn);
-			this.panel1.Controls.Add(this.label3);
-			this.panel1.Controls.Add(this.add_product_lb);
-			this.panel1.Controls.Add(this.price_tb);
-			this.panel1.Controls.Add(this.label1);
-			this.panel1.Controls.Add(this.label2);
-			this.panel1.Location = new System.Drawing.Point(22, 25);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(357, 423);
-			this.panel1.TabIndex = 9;
+			this.add_new_panel.Controls.Add(this.count_tb);
+			this.add_new_panel.Controls.Add(this.count_lb);
+			this.add_new_panel.Controls.Add(this.name_tb);
+			this.add_new_panel.Controls.Add(this.info_rtb);
+			this.add_new_panel.Controls.Add(this.add_btn);
+			this.add_new_panel.Controls.Add(this.label3);
+			this.add_new_panel.Controls.Add(this.add_product_lb);
+			this.add_new_panel.Controls.Add(this.price_tb);
+			this.add_new_panel.Controls.Add(this.label1);
+			this.add_new_panel.Controls.Add(this.label2);
+			this.add_new_panel.Location = new System.Drawing.Point(639, 11);
+			this.add_new_panel.Name = "add_new_panel";
+			this.add_new_panel.Size = new System.Drawing.Size(357, 423);
+			this.add_new_panel.TabIndex = 9;
 			// 
 			// count_tb
 			// 
@@ -191,7 +193,7 @@
 			// 
 			this.add_products_lv.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.add_products_lv.HideSelection = false;
-			this.add_products_lv.Location = new System.Drawing.Point(447, 24);
+			this.add_products_lv.Location = new System.Drawing.Point(369, 11);
 			this.add_products_lv.Name = "add_products_lv";
 			this.add_products_lv.Size = new System.Drawing.Size(264, 424);
 			this.add_products_lv.TabIndex = 10;
@@ -200,11 +202,12 @@
 			// 
 			// load_products_btn
 			// 
-			this.load_products_btn.Location = new System.Drawing.Point(717, 236);
+			this.load_products_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.load_products_btn.Location = new System.Drawing.Point(288, 178);
 			this.load_products_btn.Name = "load_products_btn";
-			this.load_products_btn.Size = new System.Drawing.Size(75, 23);
+			this.load_products_btn.Size = new System.Drawing.Size(75, 33);
 			this.load_products_btn.TabIndex = 9;
-			this.load_products_btn.Text = "->";
+			this.load_products_btn.Text = "<-";
 			this.load_products_btn.UseVisualStyleBackColor = true;
 			this.load_products_btn.Click += new System.EventHandler(this.load_products_btn_Click);
 			// 
@@ -332,7 +335,7 @@
 			this.product_info_panel.Controls.Add(this.name_info_lb);
 			this.product_info_panel.Controls.Add(this.count_info_lb);
 			this.product_info_panel.Controls.Add(this.price_info_lb);
-			this.product_info_panel.Location = new System.Drawing.Point(447, 475);
+			this.product_info_panel.Location = new System.Drawing.Point(639, 11);
 			this.product_info_panel.Name = "product_info_panel";
 			this.product_info_panel.Size = new System.Drawing.Size(330, 309);
 			this.product_info_panel.TabIndex = 17;
@@ -349,14 +352,14 @@
 			// new_count_tb
 			// 
 			this.new_count_tb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.new_count_tb.Location = new System.Drawing.Point(807, 579);
+			this.new_count_tb.Location = new System.Drawing.Point(999, 115);
 			this.new_count_tb.Name = "new_count_tb";
 			this.new_count_tb.Size = new System.Drawing.Size(180, 34);
 			this.new_count_tb.TabIndex = 14;
 			// 
 			// new_info_rtb
 			// 
-			this.new_info_rtb.Location = new System.Drawing.Point(807, 623);
+			this.new_info_rtb.Location = new System.Drawing.Point(999, 159);
 			this.new_info_rtb.Name = "new_info_rtb";
 			this.new_info_rtb.Size = new System.Drawing.Size(180, 128);
 			this.new_info_rtb.TabIndex = 13;
@@ -365,16 +368,17 @@
 			// new_price_tb
 			// 
 			this.new_price_tb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.new_price_tb.Location = new System.Drawing.Point(807, 530);
+			this.new_price_tb.Location = new System.Drawing.Point(999, 66);
 			this.new_price_tb.Name = "new_price_tb";
 			this.new_price_tb.Size = new System.Drawing.Size(180, 34);
 			this.new_price_tb.TabIndex = 12;
 			// 
 			// new_price_btn
 			// 
-			this.new_price_btn.Location = new System.Drawing.Point(1009, 538);
+			this.new_price_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.new_price_btn.Location = new System.Drawing.Point(1201, 74);
 			this.new_price_btn.Name = "new_price_btn";
-			this.new_price_btn.Size = new System.Drawing.Size(75, 23);
+			this.new_price_btn.Size = new System.Drawing.Size(75, 33);
 			this.new_price_btn.TabIndex = 11;
 			this.new_price_btn.Text = "Set";
 			this.new_price_btn.UseVisualStyleBackColor = true;
@@ -382,9 +386,10 @@
 			// 
 			// new_info_btn
 			// 
-			this.new_info_btn.Location = new System.Drawing.Point(1009, 623);
+			this.new_info_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.new_info_btn.Location = new System.Drawing.Point(1201, 159);
 			this.new_info_btn.Name = "new_info_btn";
-			this.new_info_btn.Size = new System.Drawing.Size(75, 23);
+			this.new_info_btn.Size = new System.Drawing.Size(75, 33);
 			this.new_info_btn.TabIndex = 18;
 			this.new_info_btn.Text = "Set";
 			this.new_info_btn.UseVisualStyleBackColor = true;
@@ -392,35 +397,48 @@
 			// 
 			// new_count_btn
 			// 
-			this.new_count_btn.Location = new System.Drawing.Point(1009, 581);
+			this.new_count_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.new_count_btn.Location = new System.Drawing.Point(1201, 117);
 			this.new_count_btn.Name = "new_count_btn";
-			this.new_count_btn.Size = new System.Drawing.Size(75, 23);
+			this.new_count_btn.Size = new System.Drawing.Size(75, 33);
 			this.new_count_btn.TabIndex = 19;
 			this.new_count_btn.Text = "Set";
 			this.new_count_btn.UseVisualStyleBackColor = true;
 			this.new_count_btn.Click += new System.EventHandler(this.new_count_btn_Click);
 			// 
+			// add_new_btn
+			// 
+			this.add_new_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.add_new_btn.Location = new System.Drawing.Point(286, 12);
+			this.add_new_btn.Name = "add_new_btn";
+			this.add_new_btn.Size = new System.Drawing.Size(75, 33);
+			this.add_new_btn.TabIndex = 20;
+			this.add_new_btn.Text = "Add new";
+			this.add_new_btn.UseVisualStyleBackColor = true;
+			this.add_new_btn.Click += new System.EventHandler(this.Add_new_btn);
+			// 
 			// StotreCeeperWindow
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1151, 796);
+			this.ClientSize = new System.Drawing.Size(1290, 452);
+			this.Controls.Add(this.add_new_btn);
 			this.Controls.Add(this.new_count_btn);
-			this.Controls.Add(this.new_info_btn);
-			this.Controls.Add(this.new_price_btn);
-			this.Controls.Add(this.new_count_tb);
-			this.Controls.Add(this.product_info_panel);
 			this.Controls.Add(this.load_products_btn);
-			this.Controls.Add(this.new_info_rtb);
-			this.Controls.Add(this.new_price_tb);
 			this.Controls.Add(this.add_products_lv);
-			this.Controls.Add(this.panel1);
+			this.Controls.Add(this.new_info_btn);
+			this.Controls.Add(this.add_new_panel);
 			this.Controls.Add(this.products_pv);
+			this.Controls.Add(this.new_price_btn);
+			this.Controls.Add(this.product_info_panel);
+			this.Controls.Add(this.new_price_tb);
+			this.Controls.Add(this.new_count_tb);
+			this.Controls.Add(this.new_info_rtb);
 			this.Name = "StotreCeeperWindow";
 			this.Text = "StotreCeeperWindow";
 			this.Load += new System.EventHandler(this.StotreCeeperWindow_Load);
-			this.panel1.ResumeLayout(false);
-			this.panel1.PerformLayout();
+			this.add_new_panel.ResumeLayout(false);
+			this.add_new_panel.PerformLayout();
 			this.product_info_panel.ResumeLayout(false);
 			this.product_info_panel.PerformLayout();
 			this.ResumeLayout(false);
@@ -439,7 +457,7 @@
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.RichTextBox info_rtb;
-		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.Panel add_new_panel;
 		private System.Windows.Forms.ListView add_products_lv;
 		private System.Windows.Forms.Button load_products_btn;
 		private System.Windows.Forms.TextBox count_tb;
@@ -463,5 +481,6 @@
 		private System.Windows.Forms.Button new_price_btn;
 		private System.Windows.Forms.Button new_info_btn;
 		private System.Windows.Forms.Button new_count_btn;
+		private System.Windows.Forms.Button add_new_btn;
 	}
 }

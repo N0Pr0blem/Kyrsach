@@ -152,10 +152,10 @@
 			// 
 			// add_btn
 			// 
-			this.add_btn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.add_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.add_btn.Location = new System.Drawing.Point(158, 308);
 			this.add_btn.Name = "add_btn";
-			this.add_btn.Size = new System.Drawing.Size(80, 32);
+			this.add_btn.Size = new System.Drawing.Size(80, 36);
 			this.add_btn.TabIndex = 3;
 			this.add_btn.Text = "Add";
 			this.add_btn.UseVisualStyleBackColor = true;
@@ -193,10 +193,10 @@
 			// 
 			// delete_btn
 			// 
-			this.delete_btn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.delete_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.delete_btn.Location = new System.Drawing.Point(124, 308);
 			this.delete_btn.Name = "delete_btn";
-			this.delete_btn.Size = new System.Drawing.Size(80, 32);
+			this.delete_btn.Size = new System.Drawing.Size(80, 36);
 			this.delete_btn.TabIndex = 4;
 			this.delete_btn.Text = "Delete";
 			this.delete_btn.UseVisualStyleBackColor = true;
@@ -213,10 +213,10 @@
 			// 
 			// show_btn
 			// 
-			this.show_btn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.show_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.show_btn.Location = new System.Drawing.Point(333, 396);
 			this.show_btn.Name = "show_btn";
-			this.show_btn.Size = new System.Drawing.Size(176, 32);
+			this.show_btn.Size = new System.Drawing.Size(176, 36);
 			this.show_btn.TabIndex = 4;
 			this.show_btn.Text = "Show Info:";
 			this.show_btn.UseVisualStyleBackColor = true;

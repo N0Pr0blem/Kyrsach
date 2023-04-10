@@ -74,7 +74,10 @@ namespace Kyrsach_nextTry
 		{
 			List<User> users = MyData.LoadUsers();
 			for (int i = 0; i < persons_lv.SelectedItems.Count; i++)
-				MessageBox.Show(Convert.ToString(users[persons_lv.Items.IndexOf(persons_lv.SelectedItems[i])].ToString()));
+				MessageBox.Show(Convert.ToString($"Name: {users[persons_lv.Items.IndexOf(persons_lv.SelectedItems[i])].Name}" +
+					$";\nSurname: {users[persons_lv.Items.IndexOf(persons_lv.SelectedItems[i])].Surname}" +
+					$";\nLogin: {users[persons_lv.Items.IndexOf(persons_lv.SelectedItems[i])].Login}" +
+					$";\nPassword: {Convert.ToString(users[persons_lv.Items.IndexOf(persons_lv.SelectedItems[i])].Password)};\n"));
 		}
 	}
 }
