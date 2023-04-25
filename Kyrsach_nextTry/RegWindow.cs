@@ -42,10 +42,12 @@ namespace Kyrsach_nextTry
 							break;
 					}
 					flag = true;
+					login_tb.Text = "";
+					password_tb.Text = "";
 				}
 			}
 			if (!flag) {
-				MessageBox.Show("Error");
+				MessageBox.Show("Invalid login or password..!");
 				password_tb.Text = "";
 			}
 		}

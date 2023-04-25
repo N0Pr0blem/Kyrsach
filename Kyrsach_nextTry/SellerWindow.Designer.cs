@@ -83,7 +83,7 @@
 			this.buy_btn.Name = "buy_btn";
 			this.buy_btn.Size = new System.Drawing.Size(129, 36);
 			this.buy_btn.TabIndex = 3;
-			this.buy_btn.Text = "Buy";
+			this.buy_btn.Text = "Купить";
 			this.buy_btn.UseVisualStyleBackColor = true;
 			this.buy_btn.Click += new System.EventHandler(this.Buy_Click);
 			// 
@@ -93,9 +93,9 @@
 			this.final_price_main_lb.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.final_price_main_lb.Location = new System.Drawing.Point(60, 16);
 			this.final_price_main_lb.Name = "final_price_main_lb";
-			this.final_price_main_lb.Size = new System.Drawing.Size(50, 28);
+			this.final_price_main_lb.Size = new System.Drawing.Size(53, 28);
 			this.final_price_main_lb.TabIndex = 4;
-			this.final_price_main_lb.Text = "Cost:";
+			this.final_price_main_lb.Text = "Цена:";
 			// 
 			// final_price_lb
 			// 
@@ -114,7 +114,7 @@
 			this.clean_btn.Name = "clean_btn";
 			this.clean_btn.Size = new System.Drawing.Size(129, 36);
 			this.clean_btn.TabIndex = 3;
-			this.clean_btn.Text = "Clear";
+			this.clean_btn.Text = "Очистить";
 			this.clean_btn.UseVisualStyleBackColor = true;
 			this.clean_btn.Click += new System.EventHandler(this.Clean_Click);
 			// 
@@ -141,9 +141,9 @@
 			this.new_price_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.new_price_btn.Location = new System.Drawing.Point(932, 52);
 			this.new_price_btn.Name = "new_price_btn";
-			this.new_price_btn.Size = new System.Drawing.Size(88, 37);
+			this.new_price_btn.Size = new System.Drawing.Size(117, 37);
 			this.new_price_btn.TabIndex = 3;
-			this.new_price_btn.Text = "Set";
+			this.new_price_btn.Text = "Установить";
 			this.new_price_btn.UseVisualStyleBackColor = true;
 			this.new_price_btn.Click += new System.EventHandler(this.New_price_btn_Click);
 			// 
@@ -170,6 +170,8 @@
 			this.Controls.Add(this.load_products_btn);
 			this.Controls.Add(this.buy_products_lv);
 			this.Controls.Add(this.products_lv);
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "SellerWindow";
 			this.Text = "SellerWindow";
 			this.Load += new System.EventHandler(this.SellerWindow_Load);

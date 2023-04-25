@@ -55,9 +55,9 @@
 			this.name_lb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.name_lb.Location = new System.Drawing.Point(37, 90);
 			this.name_lb.Name = "name_lb";
-			this.name_lb.Size = new System.Drawing.Size(67, 27);
+			this.name_lb.Size = new System.Drawing.Size(54, 27);
 			this.name_lb.TabIndex = 0;
-			this.name_lb.Text = "Name:";
+			this.name_lb.Text = "Имя:";
 			// 
 			// surname_lb
 			// 
@@ -65,9 +65,9 @@
 			this.surname_lb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.surname_lb.Location = new System.Drawing.Point(37, 131);
 			this.surname_lb.Name = "surname_lb";
-			this.surname_lb.Size = new System.Drawing.Size(92, 27);
+			this.surname_lb.Size = new System.Drawing.Size(97, 27);
 			this.surname_lb.TabIndex = 0;
-			this.surname_lb.Text = "Surname:";
+			this.surname_lb.Text = "Фамилия:";
 			// 
 			// login_lb
 			// 
@@ -75,9 +75,9 @@
 			this.login_lb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.login_lb.Location = new System.Drawing.Point(37, 169);
 			this.login_lb.Name = "login_lb";
-			this.login_lb.Size = new System.Drawing.Size(61, 27);
+			this.login_lb.Size = new System.Drawing.Size(67, 27);
 			this.login_lb.TabIndex = 0;
-			this.login_lb.Text = "Login:";
+			this.login_lb.Text = "Логин:";
 			// 
 			// password_lb
 			// 
@@ -85,9 +85,9 @@
 			this.password_lb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.password_lb.Location = new System.Drawing.Point(37, 214);
 			this.password_lb.Name = "password_lb";
-			this.password_lb.Size = new System.Drawing.Size(98, 27);
+			this.password_lb.Size = new System.Drawing.Size(82, 27);
 			this.password_lb.TabIndex = 0;
-			this.password_lb.Text = "Password:";
+			this.password_lb.Text = "Пароль:";
 			// 
 			// role_lb
 			// 
@@ -95,9 +95,9 @@
 			this.role_lb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.role_lb.Location = new System.Drawing.Point(37, 254);
 			this.role_lb.Name = "role_lb";
-			this.role_lb.Size = new System.Drawing.Size(55, 27);
+			this.role_lb.Size = new System.Drawing.Size(77, 27);
 			this.role_lb.TabIndex = 0;
-			this.role_lb.Text = "Role:";
+			this.role_lb.Text = "Доступ:";
 			// 
 			// role_cb
 			// 
@@ -144,20 +144,20 @@
 			// 
 			this.label6.AutoSize = true;
 			this.label6.Font = new System.Drawing.Font("Bebas Neue Regular", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label6.Location = new System.Drawing.Point(59, 12);
+			this.label6.Location = new System.Drawing.Point(3, 12);
 			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(252, 52);
+			this.label6.Size = new System.Drawing.Size(382, 52);
 			this.label6.TabIndex = 0;
-			this.label6.Text = "Add new person:";
+			this.label6.Text = "Добавить пользователя:";
 			// 
 			// add_btn
 			// 
 			this.add_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.add_btn.Location = new System.Drawing.Point(158, 308);
+			this.add_btn.Location = new System.Drawing.Point(220, 308);
 			this.add_btn.Name = "add_btn";
-			this.add_btn.Size = new System.Drawing.Size(80, 36);
+			this.add_btn.Size = new System.Drawing.Size(103, 36);
 			this.add_btn.TabIndex = 3;
-			this.add_btn.Text = "Add";
+			this.add_btn.Text = "Добавить";
 			this.add_btn.UseVisualStyleBackColor = true;
 			this.add_btn.Click += new System.EventHandler(this.Add_btn_Click);
 			// 
@@ -177,11 +177,12 @@
 			this.add_new_panel.Controls.Add(this.role_lb);
 			this.add_new_panel.Location = new System.Drawing.Point(10, 12);
 			this.add_new_panel.Name = "add_new_panel";
-			this.add_new_panel.Size = new System.Drawing.Size(391, 358);
+			this.add_new_panel.Size = new System.Drawing.Size(391, 393);
 			this.add_new_panel.TabIndex = 4;
 			// 
 			// persons_lv
 			// 
+			this.persons_lv.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.persons_lv.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.persons_lv.HideSelection = false;
 			this.persons_lv.Location = new System.Drawing.Point(20, 12);
@@ -194,31 +195,32 @@
 			// delete_btn
 			// 
 			this.delete_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.delete_btn.Location = new System.Drawing.Point(124, 308);
+			this.delete_btn.Location = new System.Drawing.Point(127, 350);
 			this.delete_btn.Name = "delete_btn";
-			this.delete_btn.Size = new System.Drawing.Size(80, 36);
+			this.delete_btn.Size = new System.Drawing.Size(90, 36);
 			this.delete_btn.TabIndex = 4;
-			this.delete_btn.Text = "Delete";
+			this.delete_btn.Text = "Удалить";
 			this.delete_btn.UseVisualStyleBackColor = true;
 			this.delete_btn.Click += new System.EventHandler(this.delete_btn_Click);
 			// 
 			// panel1
 			// 
 			this.panel1.Controls.Add(this.persons_lv);
+			this.panel1.Controls.Add(this.show_btn);
 			this.panel1.Controls.Add(this.delete_btn);
 			this.panel1.Location = new System.Drawing.Point(438, 12);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(329, 358);
+			this.panel1.Size = new System.Drawing.Size(329, 393);
 			this.panel1.TabIndex = 6;
 			// 
 			// show_btn
 			// 
 			this.show_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.show_btn.Location = new System.Drawing.Point(333, 396);
+			this.show_btn.Location = new System.Drawing.Point(63, 308);
 			this.show_btn.Name = "show_btn";
-			this.show_btn.Size = new System.Drawing.Size(176, 36);
+			this.show_btn.Size = new System.Drawing.Size(219, 36);
 			this.show_btn.TabIndex = 4;
-			this.show_btn.Text = "Show Info:";
+			this.show_btn.Text = "Показать информацию:";
 			this.show_btn.UseVisualStyleBackColor = true;
 			this.show_btn.Click += new System.EventHandler(this.show_btn_Click);
 			// 
@@ -228,8 +230,9 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(784, 468);
 			this.Controls.Add(this.panel1);
-			this.Controls.Add(this.show_btn);
 			this.Controls.Add(this.add_new_panel);
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "Form1";
 			this.Text = "Admin window";
 			this.Load += new System.EventHandler(this.Form1_Load);

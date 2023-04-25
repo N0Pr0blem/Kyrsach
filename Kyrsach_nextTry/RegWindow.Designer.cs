@@ -39,11 +39,11 @@
 			// button1
 			// 
 			this.button1.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.button1.Location = new System.Drawing.Point(163, 182);
+			this.button1.Location = new System.Drawing.Point(166, 181);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(90, 39);
 			this.button1.TabIndex = 0;
-			this.button1.Text = "Logg in";
+			this.button1.Text = "Вход";
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
@@ -52,6 +52,7 @@
 			this.password_tb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.password_tb.Location = new System.Drawing.Point(136, 128);
 			this.password_tb.Name = "password_tb";
+			this.password_tb.PasswordChar = '*';
 			this.password_tb.Size = new System.Drawing.Size(212, 34);
 			this.password_tb.TabIndex = 1;
 			// 
@@ -61,9 +62,9 @@
 			this.label1.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.label1.Location = new System.Drawing.Point(37, 135);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(93, 28);
+			this.label1.Size = new System.Drawing.Size(72, 28);
 			this.label1.TabIndex = 2;
-			this.label1.Text = "Password:";
+			this.label1.Text = "Пароль:";
 			// 
 			// label2
 			// 
@@ -71,9 +72,9 @@
 			this.label2.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.label2.Location = new System.Drawing.Point(37, 94);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(55, 28);
+			this.label2.Size = new System.Drawing.Size(61, 28);
 			this.label2.TabIndex = 4;
-			this.label2.Text = "Login:";
+			this.label2.Text = "Логин:";
 			// 
 			// login_tb
 			// 
@@ -87,11 +88,11 @@
 			// 
 			this.label3.AutoSize = true;
 			this.label3.Font = new System.Drawing.Font("Bebas Neue Regular", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(155, 20);
+			this.label3.Location = new System.Drawing.Point(106, 9);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(113, 48);
+			this.label3.Size = new System.Drawing.Size(203, 48);
 			this.label3.TabIndex = 5;
-			this.label3.Text = "Logg in:";
+			this.label3.Text = "Авторизация:";
 			// 
 			// RegWindow
 			// 

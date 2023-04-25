@@ -24,6 +24,7 @@ namespace Kyrsach_nextTry
 		{
 			EnterAllAccessFromDataToRoleCb();
 			show_all_persons();
+			role_cb.Text = role_cb.Items[0].ToString();
 		}
 		private void EnterAllAccessFromDataToRoleCb()
 		{
@@ -34,16 +35,25 @@ namespace Kyrsach_nextTry
 
 		private void Add_btn_Click(object sender, EventArgs e)
 		{
-			users = MyData.LoadUsers();
-			users.Add(new User(name_tb.Text, surname_tb.Text, login_tb.Text, password_tb.Text, (MyData.Access)(role_cb.SelectedItem)));
-			MyData.SaveList(users);
-			show_all_persons();
-
-			name_tb.Text = "";
-			surname_tb.Text = "";
-			password_tb.Text = "";
-			login_tb.Text = "";
-			role_cb.SelectedItem = null;
+			try
+			{
+				users = MyData.LoadUsers();
+				users.Add(new User(name_tb.Text, surname_tb.Text, login_tb.Text, password_tb.Text, (MyData.Access)(role_cb.SelectedItem)));
+				MyData.SaveList(users);
+				show_all_persons();
+			}
+			catch (NullReferenceException ex)
+			{
+				MessageBox.Show(ex.Message);			
+			}
+			finally
+			{
+				name_tb.Text = "";
+				surname_tb.Text = "";
+				password_tb.Text = "";
+				login_tb.Text = "";
+				role_cb.Text = role_cb.Items[0].ToString();
+			}
 		}
 
 		private void delete_btn_Click(object sender, EventArgs e)

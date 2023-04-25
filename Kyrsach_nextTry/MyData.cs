@@ -11,6 +11,7 @@ namespace Kyrsach_nextTry
 	public class MyData
 	{
 		public enum Access { ADMIN, SELLER, STOREKEEPER }
+		public static string[] Sorts = {"Назвнию ↑","Назвнию ↓","Цене ↑","Цене ↓","Количеству ↑","Количеству ↓"};
 
 		public static void SaveList(List<User> list)
 		{
