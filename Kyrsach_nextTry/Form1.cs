@@ -89,5 +89,10 @@ namespace Kyrsach_nextTry
 					$";\nLogin: {users[persons_lv.Items.IndexOf(persons_lv.SelectedItems[i])].Login}" +
 					$";\nPassword: {Convert.ToString(users[persons_lv.Items.IndexOf(persons_lv.SelectedItems[i])].Password)};\n"));
 		}
+
+		private void persons_lv_SelectedIndexChanged(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

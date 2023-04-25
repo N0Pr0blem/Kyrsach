@@ -616,8 +616,8 @@
 			this.Controls.Add(this.load_products_btn);
 			this.Controls.Add(this.add_products_lv);
 			this.Controls.Add(this.products_pv);
-			this.Controls.Add(this.add_new_panel);
 			this.Controls.Add(this.product_info_panel);
+			this.Controls.Add(this.add_new_panel);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "StotreCeeperWindow";
