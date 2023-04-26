@@ -15,10 +15,10 @@
     <Access>SELLER</Access>
   </User>
   <User>
-    <Name>Oleg</Name>
-    <Surname>Baza</Surname>
-    <Login>storeceeper</Login>
-    <Password>storeceeper</Password>
+    <Name>Василий</Name>
+    <Surname>Игнатько</Surname>
+    <Login>store</Login>
+    <Password>store</Password>
     <Access>STOREKEEPER</Access>
   </User>
 </ArrayOfUser>

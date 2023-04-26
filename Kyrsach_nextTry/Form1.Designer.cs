@@ -41,17 +41,29 @@
 			this.label6 = new System.Windows.Forms.Label();
 			this.add_btn = new System.Windows.Forms.Button();
 			this.add_new_panel = new System.Windows.Forms.Panel();
-			this.persons_lv = new System.Windows.Forms.ListView();
+			this.users_info_panel = new System.Windows.Forms.Panel();
+			this.close_users_info_panel_btn = new System.Windows.Forms.Button();
+			this.users_password_tb = new System.Windows.Forms.TextBox();
+			this.users_access_tb = new System.Windows.Forms.TextBox();
 			this.delete_btn = new System.Windows.Forms.Button();
-			this.show_btn = new System.Windows.Forms.Button();
-			this.panel2 = new System.Windows.Forms.Panel();
+			this.users_login_tb = new System.Windows.Forms.TextBox();
+			this.users_surname_tb = new System.Windows.Forms.TextBox();
+			this.users_name_tb = new System.Windows.Forms.TextBox();
+			this.users_login_lb = new System.Windows.Forms.Label();
+			this.users_password_lb = new System.Windows.Forms.Label();
+			this.users_access_lb = new System.Windows.Forms.Label();
+			this.users_surname_lb = new System.Windows.Forms.Label();
+			this.users_name_lb = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.persons_lv = new System.Windows.Forms.ListView();
+			this.info_panel = new System.Windows.Forms.Panel();
 			this.search_tb = new System.Windows.Forms.TextBox();
 			this.sort_by_lb = new System.Windows.Forms.Label();
+			this.add_new_show_btn = new System.Windows.Forms.Button();
 			this.searchs_cb = new System.Windows.Forms.ComboBox();
 			this.search_by_lb = new System.Windows.Forms.Label();
 			this.search_btn = new System.Windows.Forms.Button();
 			this.sorts_cb = new System.Windows.Forms.ComboBox();
-			this.add_new_show_btn = new System.Windows.Forms.Button();
 			this.products_pv = new System.Windows.Forms.ListView();
 			this.product_info_panel = new System.Windows.Forms.Panel();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -65,8 +77,10 @@
 			this.name_info_lb = new System.Windows.Forms.Label();
 			this.count_info_lb = new System.Windows.Forms.Label();
 			this.price_info_lb = new System.Windows.Forms.Label();
+			this.checkBox1 = new System.Windows.Forms.CheckBox();
 			this.add_new_panel.SuspendLayout();
-			this.panel2.SuspendLayout();
+			this.users_info_panel.SuspendLayout();
+			this.info_panel.SuspendLayout();
 			this.product_info_panel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
@@ -75,7 +89,7 @@
 			// 
 			this.name_lb.AutoSize = true;
 			this.name_lb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.name_lb.Location = new System.Drawing.Point(85, 105);
+			this.name_lb.Location = new System.Drawing.Point(33, 105);
 			this.name_lb.Name = "name_lb";
 			this.name_lb.Size = new System.Drawing.Size(54, 27);
 			this.name_lb.TabIndex = 0;
@@ -85,7 +99,7 @@
 			// 
 			this.surname_lb.AutoSize = true;
 			this.surname_lb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.surname_lb.Location = new System.Drawing.Point(85, 146);
+			this.surname_lb.Location = new System.Drawing.Point(33, 146);
 			this.surname_lb.Name = "surname_lb";
 			this.surname_lb.Size = new System.Drawing.Size(97, 27);
 			this.surname_lb.TabIndex = 0;
@@ -95,7 +109,7 @@
 			// 
 			this.login_lb.AutoSize = true;
 			this.login_lb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.login_lb.Location = new System.Drawing.Point(85, 184);
+			this.login_lb.Location = new System.Drawing.Point(33, 184);
 			this.login_lb.Name = "login_lb";
 			this.login_lb.Size = new System.Drawing.Size(67, 27);
 			this.login_lb.TabIndex = 0;
@@ -105,7 +119,7 @@
 			// 
 			this.password_lb.AutoSize = true;
 			this.password_lb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.password_lb.Location = new System.Drawing.Point(85, 229);
+			this.password_lb.Location = new System.Drawing.Point(33, 229);
 			this.password_lb.Name = "password_lb";
 			this.password_lb.Size = new System.Drawing.Size(82, 27);
 			this.password_lb.TabIndex = 0;
@@ -115,7 +129,7 @@
 			// 
 			this.role_lb.AutoSize = true;
 			this.role_lb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.role_lb.Location = new System.Drawing.Point(85, 269);
+			this.role_lb.Location = new System.Drawing.Point(33, 269);
 			this.role_lb.Name = "role_lb";
 			this.role_lb.Size = new System.Drawing.Size(77, 27);
 			this.role_lb.TabIndex = 0;
@@ -125,41 +139,41 @@
 			// 
 			this.role_cb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.role_cb.FormattingEnabled = true;
-			this.role_cb.Location = new System.Drawing.Point(231, 266);
+			this.role_cb.Location = new System.Drawing.Point(146, 266);
 			this.role_cb.Name = "role_cb";
-			this.role_cb.Size = new System.Drawing.Size(177, 35);
+			this.role_cb.Size = new System.Drawing.Size(262, 35);
 			this.role_cb.TabIndex = 1;
 			// 
 			// name_tb
 			// 
 			this.name_tb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.name_tb.Location = new System.Drawing.Point(231, 105);
+			this.name_tb.Location = new System.Drawing.Point(146, 105);
 			this.name_tb.Name = "name_tb";
-			this.name_tb.Size = new System.Drawing.Size(177, 34);
+			this.name_tb.Size = new System.Drawing.Size(262, 34);
 			this.name_tb.TabIndex = 2;
 			// 
 			// surname_tb
 			// 
 			this.surname_tb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.surname_tb.Location = new System.Drawing.Point(231, 143);
+			this.surname_tb.Location = new System.Drawing.Point(146, 143);
 			this.surname_tb.Name = "surname_tb";
-			this.surname_tb.Size = new System.Drawing.Size(177, 34);
+			this.surname_tb.Size = new System.Drawing.Size(262, 34);
 			this.surname_tb.TabIndex = 2;
 			// 
 			// login_tb
 			// 
 			this.login_tb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.login_tb.Location = new System.Drawing.Point(231, 181);
+			this.login_tb.Location = new System.Drawing.Point(146, 181);
 			this.login_tb.Name = "login_tb";
-			this.login_tb.Size = new System.Drawing.Size(177, 34);
+			this.login_tb.Size = new System.Drawing.Size(262, 34);
 			this.login_tb.TabIndex = 2;
 			// 
 			// password_tb
 			// 
 			this.password_tb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.password_tb.Location = new System.Drawing.Point(231, 222);
+			this.password_tb.Location = new System.Drawing.Point(146, 222);
 			this.password_tb.Name = "password_tb";
-			this.password_tb.Size = new System.Drawing.Size(177, 34);
+			this.password_tb.Size = new System.Drawing.Size(262, 34);
 			this.password_tb.TabIndex = 2;
 			// 
 			// label6
@@ -175,9 +189,9 @@
 			// add_btn
 			// 
 			this.add_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.add_btn.Location = new System.Drawing.Point(268, 323);
+			this.add_btn.Location = new System.Drawing.Point(216, 318);
 			this.add_btn.Name = "add_btn";
-			this.add_btn.Size = new System.Drawing.Size(103, 36);
+			this.add_btn.Size = new System.Drawing.Size(127, 36);
 			this.add_btn.TabIndex = 3;
 			this.add_btn.Text = "Добавить";
 			this.add_btn.UseVisualStyleBackColor = true;
@@ -186,7 +200,6 @@
 			// add_new_panel
 			// 
 			this.add_new_panel.Controls.Add(this.role_cb);
-			this.add_new_panel.Controls.Add(this.show_btn);
 			this.add_new_panel.Controls.Add(this.add_btn);
 			this.add_new_panel.Controls.Add(this.name_lb);
 			this.add_new_panel.Controls.Add(this.password_tb);
@@ -203,23 +216,61 @@
 			this.add_new_panel.Size = new System.Drawing.Size(481, 684);
 			this.add_new_panel.TabIndex = 4;
 			// 
-			// persons_lv
+			// users_info_panel
 			// 
-			this.persons_lv.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.persons_lv.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.persons_lv.HideSelection = false;
-			this.persons_lv.Location = new System.Drawing.Point(12, 51);
-			this.persons_lv.Name = "persons_lv";
-			this.persons_lv.Size = new System.Drawing.Size(448, 641);
-			this.persons_lv.TabIndex = 5;
-			this.persons_lv.UseCompatibleStateImageBehavior = false;
-			this.persons_lv.View = System.Windows.Forms.View.List;
-			this.persons_lv.SelectedIndexChanged += new System.EventHandler(this.persons_lv_SelectedIndexChanged);
+			this.users_info_panel.Controls.Add(this.checkBox1);
+			this.users_info_panel.Controls.Add(this.close_users_info_panel_btn);
+			this.users_info_panel.Controls.Add(this.users_password_tb);
+			this.users_info_panel.Controls.Add(this.users_access_tb);
+			this.users_info_panel.Controls.Add(this.delete_btn);
+			this.users_info_panel.Controls.Add(this.users_login_tb);
+			this.users_info_panel.Controls.Add(this.users_surname_tb);
+			this.users_info_panel.Controls.Add(this.users_name_tb);
+			this.users_info_panel.Controls.Add(this.users_login_lb);
+			this.users_info_panel.Controls.Add(this.users_password_lb);
+			this.users_info_panel.Controls.Add(this.users_access_lb);
+			this.users_info_panel.Controls.Add(this.users_surname_lb);
+			this.users_info_panel.Controls.Add(this.users_name_lb);
+			this.users_info_panel.Controls.Add(this.label2);
+			this.users_info_panel.Location = new System.Drawing.Point(463, 51);
+			this.users_info_panel.Name = "users_info_panel";
+			this.users_info_panel.Size = new System.Drawing.Size(483, 689);
+			this.users_info_panel.TabIndex = 5;
+			// 
+			// close_users_info_panel_btn
+			// 
+			this.close_users_info_panel_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.close_users_info_panel_btn.Location = new System.Drawing.Point(219, 357);
+			this.close_users_info_panel_btn.Name = "close_users_info_panel_btn";
+			this.close_users_info_panel_btn.Size = new System.Drawing.Size(212, 36);
+			this.close_users_info_panel_btn.TabIndex = 5;
+			this.close_users_info_panel_btn.Text = "Закрыть";
+			this.close_users_info_panel_btn.UseVisualStyleBackColor = true;
+			this.close_users_info_panel_btn.Click += new System.EventHandler(this.close_users_info_panel_btn_Cick);
+			// 
+			// users_password_tb
+			// 
+			this.users_password_tb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.users_password_tb.Location = new System.Drawing.Point(160, 279);
+			this.users_password_tb.Name = "users_password_tb";
+			this.users_password_tb.ReadOnly = true;
+			this.users_password_tb.Size = new System.Drawing.Size(271, 34);
+			this.users_password_tb.TabIndex = 2;
+			this.users_password_tb.UseSystemPasswordChar = true;
+			// 
+			// users_access_tb
+			// 
+			this.users_access_tb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.users_access_tb.Location = new System.Drawing.Point(160, 240);
+			this.users_access_tb.Name = "users_access_tb";
+			this.users_access_tb.ReadOnly = true;
+			this.users_access_tb.Size = new System.Drawing.Size(271, 34);
+			this.users_access_tb.TabIndex = 2;
 			// 
 			// delete_btn
 			// 
 			this.delete_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.delete_btn.Location = new System.Drawing.Point(12, 692);
+			this.delete_btn.Location = new System.Drawing.Point(63, 357);
 			this.delete_btn.Name = "delete_btn";
 			this.delete_btn.Size = new System.Drawing.Size(138, 36);
 			this.delete_btn.TabIndex = 4;
@@ -227,29 +278,119 @@
 			this.delete_btn.UseVisualStyleBackColor = true;
 			this.delete_btn.Click += new System.EventHandler(this.delete_btn_Click);
 			// 
-			// show_btn
+			// users_login_tb
 			// 
-			this.show_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.show_btn.Location = new System.Drawing.Point(129, 566);
-			this.show_btn.Name = "show_btn";
-			this.show_btn.Size = new System.Drawing.Size(219, 36);
-			this.show_btn.TabIndex = 4;
-			this.show_btn.Text = "Показать информацию:";
-			this.show_btn.UseVisualStyleBackColor = true;
-			this.show_btn.Click += new System.EventHandler(this.show_btn_Click);
+			this.users_login_tb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.users_login_tb.Location = new System.Drawing.Point(160, 201);
+			this.users_login_tb.Name = "users_login_tb";
+			this.users_login_tb.ReadOnly = true;
+			this.users_login_tb.Size = new System.Drawing.Size(271, 34);
+			this.users_login_tb.TabIndex = 2;
 			// 
-			// panel2
+			// users_surname_tb
 			// 
-			this.panel2.Controls.Add(this.search_tb);
-			this.panel2.Controls.Add(this.sort_by_lb);
-			this.panel2.Controls.Add(this.searchs_cb);
-			this.panel2.Controls.Add(this.search_by_lb);
-			this.panel2.Controls.Add(this.search_btn);
-			this.panel2.Controls.Add(this.sorts_cb);
-			this.panel2.Location = new System.Drawing.Point(12, 9);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(1398, 41);
-			this.panel2.TabIndex = 27;
+			this.users_surname_tb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.users_surname_tb.Location = new System.Drawing.Point(160, 161);
+			this.users_surname_tb.Name = "users_surname_tb";
+			this.users_surname_tb.ReadOnly = true;
+			this.users_surname_tb.Size = new System.Drawing.Size(271, 34);
+			this.users_surname_tb.TabIndex = 2;
+			// 
+			// users_name_tb
+			// 
+			this.users_name_tb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.users_name_tb.Location = new System.Drawing.Point(160, 123);
+			this.users_name_tb.Name = "users_name_tb";
+			this.users_name_tb.ReadOnly = true;
+			this.users_name_tb.Size = new System.Drawing.Size(271, 34);
+			this.users_name_tb.TabIndex = 2;
+			// 
+			// users_login_lb
+			// 
+			this.users_login_lb.AutoSize = true;
+			this.users_login_lb.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.users_login_lb.Location = new System.Drawing.Point(57, 207);
+			this.users_login_lb.Name = "users_login_lb";
+			this.users_login_lb.Size = new System.Drawing.Size(61, 28);
+			this.users_login_lb.TabIndex = 1;
+			this.users_login_lb.Text = "Логин:";
+			// 
+			// users_password_lb
+			// 
+			this.users_password_lb.AutoSize = true;
+			this.users_password_lb.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.users_password_lb.Location = new System.Drawing.Point(58, 286);
+			this.users_password_lb.Name = "users_password_lb";
+			this.users_password_lb.Size = new System.Drawing.Size(72, 28);
+			this.users_password_lb.TabIndex = 1;
+			this.users_password_lb.Text = "Пароль:";
+			// 
+			// users_access_lb
+			// 
+			this.users_access_lb.AutoSize = true;
+			this.users_access_lb.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.users_access_lb.Location = new System.Drawing.Point(57, 245);
+			this.users_access_lb.Name = "users_access_lb";
+			this.users_access_lb.Size = new System.Drawing.Size(73, 28);
+			this.users_access_lb.TabIndex = 1;
+			this.users_access_lb.Text = "Доступ:";
+			// 
+			// users_surname_lb
+			// 
+			this.users_surname_lb.AutoSize = true;
+			this.users_surname_lb.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.users_surname_lb.Location = new System.Drawing.Point(57, 164);
+			this.users_surname_lb.Name = "users_surname_lb";
+			this.users_surname_lb.Size = new System.Drawing.Size(88, 28);
+			this.users_surname_lb.TabIndex = 1;
+			this.users_surname_lb.Text = "Фамилия:";
+			// 
+			// users_name_lb
+			// 
+			this.users_name_lb.AutoSize = true;
+			this.users_name_lb.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.users_name_lb.Location = new System.Drawing.Point(57, 119);
+			this.users_name_lb.Name = "users_name_lb";
+			this.users_name_lb.Size = new System.Drawing.Size(46, 28);
+			this.users_name_lb.TabIndex = 1;
+			this.users_name_lb.Text = "Имя:";
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Bebas Neue Regular", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.label2.Location = new System.Drawing.Point(152, 11);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(180, 44);
+			this.label2.TabIndex = 0;
+			this.label2.Text = "Информация";
+			// 
+			// persons_lv
+			// 
+			this.persons_lv.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.persons_lv.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.persons_lv.HideSelection = false;
+			this.persons_lv.Location = new System.Drawing.Point(12, 51);
+			this.persons_lv.Name = "persons_lv";
+			this.persons_lv.Size = new System.Drawing.Size(448, 685);
+			this.persons_lv.TabIndex = 5;
+			this.persons_lv.UseCompatibleStateImageBehavior = false;
+			this.persons_lv.View = System.Windows.Forms.View.List;
+			this.persons_lv.MouseClick += new System.Windows.Forms.MouseEventHandler(this.persons_lv_MouseClick);
+			// 
+			// info_panel
+			// 
+			this.info_panel.Controls.Add(this.search_tb);
+			this.info_panel.Controls.Add(this.sort_by_lb);
+			this.info_panel.Controls.Add(this.add_new_show_btn);
+			this.info_panel.Controls.Add(this.searchs_cb);
+			this.info_panel.Controls.Add(this.search_by_lb);
+			this.info_panel.Controls.Add(this.search_btn);
+			this.info_panel.Controls.Add(this.sorts_cb);
+			this.info_panel.Location = new System.Drawing.Point(12, 9);
+			this.info_panel.Name = "info_panel";
+			this.info_panel.Size = new System.Drawing.Size(1398, 41);
+			this.info_panel.TabIndex = 27;
 			// 
 			// search_tb
 			// 
@@ -270,6 +411,17 @@
 			this.sort_by_lb.Size = new System.Drawing.Size(138, 28);
 			this.sort_by_lb.TabIndex = 3;
 			this.sort_by_lb.Text = "Сортировать по:";
+			// 
+			// add_new_show_btn
+			// 
+			this.add_new_show_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.add_new_show_btn.Location = new System.Drawing.Point(3, 3);
+			this.add_new_show_btn.Name = "add_new_show_btn";
+			this.add_new_show_btn.Size = new System.Drawing.Size(304, 36);
+			this.add_new_show_btn.TabIndex = 5;
+			this.add_new_show_btn.Text = "Добавить";
+			this.add_new_show_btn.UseVisualStyleBackColor = true;
+			this.add_new_show_btn.Click += new System.EventHandler(this.add_new_show_btn_Click);
 			// 
 			// searchs_cb
 			// 
@@ -305,6 +457,7 @@
 			this.search_btn.TabIndex = 22;
 			this.search_btn.Text = "0";
 			this.search_btn.UseVisualStyleBackColor = true;
+			this.search_btn.Click += new System.EventHandler(this.search_btn_Click);
 			// 
 			// sorts_cb
 			// 
@@ -313,8 +466,8 @@
 			this.sorts_cb.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.sorts_cb.FormattingEnabled = true;
 			this.sorts_cb.Items.AddRange(new object[] {
-            "Назвнию ↑",
-            "Назвнию ↓",
+            "Названию ↑",
+            "Названию ↓",
             "Цене ↑",
             "Цене ↓",
             "Количеству ↑",
@@ -323,16 +476,7 @@
 			this.sorts_cb.Name = "sorts_cb";
 			this.sorts_cb.Size = new System.Drawing.Size(173, 36);
 			this.sorts_cb.TabIndex = 21;
-			// 
-			// add_new_show_btn
-			// 
-			this.add_new_show_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.add_new_show_btn.Location = new System.Drawing.Point(156, 692);
-			this.add_new_show_btn.Name = "add_new_show_btn";
-			this.add_new_show_btn.Size = new System.Drawing.Size(304, 36);
-			this.add_new_show_btn.TabIndex = 5;
-			this.add_new_show_btn.Text = "Добавить";
-			this.add_new_show_btn.UseVisualStyleBackColor = true;
+			this.sorts_cb.SelectedIndexChanged += new System.EventHandler(this.sorts_cb_SelectedIndexChanged);
 			// 
 			// products_pv
 			// 
@@ -340,10 +484,11 @@
 			this.products_pv.HideSelection = false;
 			this.products_pv.Location = new System.Drawing.Point(962, 51);
 			this.products_pv.Name = "products_pv";
-			this.products_pv.Size = new System.Drawing.Size(448, 677);
+			this.products_pv.Size = new System.Drawing.Size(448, 685);
 			this.products_pv.TabIndex = 28;
 			this.products_pv.UseCompatibleStateImageBehavior = false;
 			this.products_pv.View = System.Windows.Forms.View.List;
+			this.products_pv.MouseClick += new System.Windows.Forms.MouseEventHandler(this.products_pv_MouseClick);
 			// 
 			// product_info_panel
 			// 
@@ -437,10 +582,11 @@
 			this.change_info_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.change_info_btn.Location = new System.Drawing.Point(202, 567);
 			this.change_info_btn.Name = "change_info_btn";
-			this.change_info_btn.Size = new System.Drawing.Size(103, 33);
+			this.change_info_btn.Size = new System.Drawing.Size(124, 33);
 			this.change_info_btn.TabIndex = 0;
 			this.change_info_btn.Text = "Удалить";
 			this.change_info_btn.UseVisualStyleBackColor = true;
+			this.change_info_btn.Click += new System.EventHandler(this.change_info_btn_Click);
 			// 
 			// name_info_lb
 			// 
@@ -472,6 +618,16 @@
 			this.price_info_lb.TabIndex = 15;
 			this.price_info_lb.Text = "_";
 			// 
+			// checkBox1
+			// 
+			this.checkBox1.AutoSize = true;
+			this.checkBox1.Location = new System.Drawing.Point(437, 288);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(18, 17);
+			this.checkBox1.TabIndex = 6;
+			this.checkBox1.UseVisualStyleBackColor = true;
+			this.checkBox1.CheckedChanged += new System.EventHandler(this.show_password_rb_CheckedChanged);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -479,11 +635,10 @@
 			this.ClientSize = new System.Drawing.Size(1426, 748);
 			this.Controls.Add(this.persons_lv);
 			this.Controls.Add(this.products_pv);
-			this.Controls.Add(this.add_new_show_btn);
-			this.Controls.Add(this.panel2);
-			this.Controls.Add(this.delete_btn);
+			this.Controls.Add(this.info_panel);
 			this.Controls.Add(this.add_new_panel);
 			this.Controls.Add(this.product_info_panel);
+			this.Controls.Add(this.users_info_panel);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "Form1";
@@ -491,8 +646,10 @@
 			this.Load += new System.EventHandler(this.Form1_Load);
 			this.add_new_panel.ResumeLayout(false);
 			this.add_new_panel.PerformLayout();
-			this.panel2.ResumeLayout(false);
-			this.panel2.PerformLayout();
+			this.users_info_panel.ResumeLayout(false);
+			this.users_info_panel.PerformLayout();
+			this.info_panel.ResumeLayout(false);
+			this.info_panel.PerformLayout();
 			this.product_info_panel.ResumeLayout(false);
 			this.product_info_panel.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -517,8 +674,7 @@
 		private System.Windows.Forms.Panel add_new_panel;
 		private System.Windows.Forms.ListView persons_lv;
 		private System.Windows.Forms.Button delete_btn;
-		private System.Windows.Forms.Button show_btn;
-		private System.Windows.Forms.Panel panel2;
+		private System.Windows.Forms.Panel info_panel;
 		private System.Windows.Forms.TextBox search_tb;
 		private System.Windows.Forms.Label sort_by_lb;
 		private System.Windows.Forms.ComboBox searchs_cb;
@@ -539,6 +695,20 @@
 		private System.Windows.Forms.Label name_info_lb;
 		private System.Windows.Forms.Label count_info_lb;
 		private System.Windows.Forms.Label price_info_lb;
+		private System.Windows.Forms.Panel users_info_panel;
+		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Label users_access_lb;
+		private System.Windows.Forms.Label users_surname_lb;
+		private System.Windows.Forms.Label users_name_lb;
+		private System.Windows.Forms.TextBox users_password_tb;
+		private System.Windows.Forms.TextBox users_access_tb;
+		private System.Windows.Forms.TextBox users_login_tb;
+		private System.Windows.Forms.TextBox users_surname_tb;
+		private System.Windows.Forms.TextBox users_name_tb;
+		private System.Windows.Forms.Label users_login_lb;
+		private System.Windows.Forms.Label users_password_lb;
+		private System.Windows.Forms.Button close_users_info_panel_btn;
+		private System.Windows.Forms.CheckBox checkBox1;
 	}
 }
 

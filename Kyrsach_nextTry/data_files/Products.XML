@@ -6,22 +6,6 @@
       <Price>126</Price>
       <Info>рпшам</Info>
     </Item1>
-    <Item2>2</Item2>
-  </ValueTupleOfProductInt32>
-  <ValueTupleOfProductInt32>
-    <Item1>
-      <Name>в</Name>
-      <Price>123</Price>
-      <Info>йцу</Info>
-    </Item1>
-    <Item2>2</Item2>
-  </ValueTupleOfProductInt32>
-  <ValueTupleOfProductInt32>
-    <Item1>
-      <Name>фывапр</Name>
-      <Price>12</Price>
-      <Info>ывам</Info>
-    </Item1>
-    <Item2>1</Item2>
+    <Item2>1234</Item2>
   </ValueTupleOfProductInt32>
 </ArrayOfValueTupleOfProductInt32>

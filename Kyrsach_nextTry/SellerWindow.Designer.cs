@@ -39,6 +39,7 @@
 			this.new_price_tb = new System.Windows.Forms.TextBox();
 			this.new_price_btn = new System.Windows.Forms.Button();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.count_lb = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.search_tb = new System.Windows.Forms.TextBox();
 			this.sort_by_lb = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@
 			this.search_by_lb = new System.Windows.Forms.Label();
 			this.search_btn = new System.Windows.Forms.Button();
 			this.sorts_cb = new System.Windows.Forms.ComboBox();
-			this.count_lb = new System.Windows.Forms.Label();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.SuspendLayout();
@@ -103,7 +103,7 @@
 			this.final_price_main_lb.Font = new System.Drawing.Font("Bebas Neue Regular", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.final_price_main_lb.Location = new System.Drawing.Point(147, 327);
 			this.final_price_main_lb.Name = "final_price_main_lb";
-			this.final_price_main_lb.Size = new System.Drawing.Size(78, 41);
+			this.final_price_main_lb.Size = new System.Drawing.Size(76, 40);
 			this.final_price_main_lb.TabIndex = 4;
 			this.final_price_main_lb.Text = "Цена:";
 			// 
@@ -113,7 +113,7 @@
 			this.final_price_lb.Font = new System.Drawing.Font("Bebas Neue Regular", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.final_price_lb.Location = new System.Drawing.Point(242, 327);
 			this.final_price_lb.Name = "final_price_lb";
-			this.final_price_lb.Size = new System.Drawing.Size(31, 41);
+			this.final_price_lb.Size = new System.Drawing.Size(30, 40);
 			this.final_price_lb.TabIndex = 4;
 			this.final_price_lb.Text = "0";
 			// 
@@ -134,7 +134,7 @@
 			this.new_price_lb.Font = new System.Drawing.Font("Bebas Neue Regular", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.new_price_lb.Location = new System.Drawing.Point(310, 177);
 			this.new_price_lb.Name = "new_price_lb";
-			this.new_price_lb.Size = new System.Drawing.Size(29, 41);
+			this.new_price_lb.Size = new System.Drawing.Size(28, 40);
 			this.new_price_lb.TabIndex = 5;
 			this.new_price_lb.Text = "1";
 			// 
@@ -171,6 +171,16 @@
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(499, 733);
 			this.panel1.TabIndex = 7;
+			// 
+			// count_lb
+			// 
+			this.count_lb.AutoSize = true;
+			this.count_lb.Font = new System.Drawing.Font("Bebas Neue Regular", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.count_lb.Location = new System.Drawing.Point(147, 177);
+			this.count_lb.Name = "count_lb";
+			this.count_lb.Size = new System.Drawing.Size(152, 40);
+			this.count_lb.TabIndex = 5;
+			this.count_lb.Text = "Количество:";
 			// 
 			// panel2
 			// 
@@ -248,8 +258,8 @@
 			this.sorts_cb.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.sorts_cb.FormattingEnabled = true;
 			this.sorts_cb.Items.AddRange(new object[] {
-            "Назвнию ↑",
-            "Назвнию ↓",
+            "Названию ↑",
+            "Названию ↓",
             "Цене ↑",
             "Цене ↓",
             "Количеству ↑",
@@ -259,16 +269,6 @@
 			this.sorts_cb.Size = new System.Drawing.Size(173, 36);
 			this.sorts_cb.TabIndex = 21;
 			this.sorts_cb.SelectedIndexChanged += new System.EventHandler(this.sorts_cb_SelectedIndexChanged);
-			// 
-			// count_lb
-			// 
-			this.count_lb.AutoSize = true;
-			this.count_lb.Font = new System.Drawing.Font("Bebas Neue Regular", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.count_lb.Location = new System.Drawing.Point(147, 177);
-			this.count_lb.Name = "count_lb";
-			this.count_lb.Size = new System.Drawing.Size(157, 41);
-			this.count_lb.TabIndex = 5;
-			this.count_lb.Text = "Количество:";
 			// 
 			// SellerWindow
 			// 
