@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SellerWindow));
 			this.products_lv = new System.Windows.Forms.ListView();
 			this.buy_products_lv = new System.Windows.Forms.ListView();
 			this.load_products_btn = new System.Windows.Forms.Button();
@@ -47,17 +48,20 @@
 			this.search_by_lb = new System.Windows.Forms.Label();
 			this.search_btn = new System.Windows.Forms.Button();
 			this.sorts_cb = new System.Windows.Forms.ComboBox();
+			this.panel3 = new System.Windows.Forms.Panel();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
+			this.panel3.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// products_lv
 			// 
+			this.products_lv.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.products_lv.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.products_lv.HideSelection = false;
-			this.products_lv.Location = new System.Drawing.Point(5, 47);
+			this.products_lv.Location = new System.Drawing.Point(3, 3);
 			this.products_lv.Name = "products_lv";
-			this.products_lv.Size = new System.Drawing.Size(417, 690);
+			this.products_lv.Size = new System.Drawing.Size(418, 680);
 			this.products_lv.TabIndex = 0;
 			this.products_lv.UseCompatibleStateImageBehavior = false;
 			this.products_lv.View = System.Windows.Forms.View.List;
@@ -65,11 +69,12 @@
 			// 
 			// buy_products_lv
 			// 
+			this.buy_products_lv.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.buy_products_lv.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.buy_products_lv.HideSelection = false;
-			this.buy_products_lv.Location = new System.Drawing.Point(500, 47);
+			this.buy_products_lv.Location = new System.Drawing.Point(499, 3);
 			this.buy_products_lv.Name = "buy_products_lv";
-			this.buy_products_lv.Size = new System.Drawing.Size(409, 689);
+			this.buy_products_lv.Size = new System.Drawing.Size(399, 680);
 			this.buy_products_lv.TabIndex = 1;
 			this.buy_products_lv.UseCompatibleStateImageBehavior = false;
 			this.buy_products_lv.View = System.Windows.Forms.View.List;
@@ -78,9 +83,9 @@
 			// load_products_btn
 			// 
 			this.load_products_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.load_products_btn.Location = new System.Drawing.Point(428, 47);
+			this.load_products_btn.Location = new System.Drawing.Point(427, 3);
 			this.load_products_btn.Name = "load_products_btn";
-			this.load_products_btn.Size = new System.Drawing.Size(66, 689);
+			this.load_products_btn.Size = new System.Drawing.Size(66, 680);
 			this.load_products_btn.TabIndex = 2;
 			this.load_products_btn.Text = "->";
 			this.load_products_btn.UseVisualStyleBackColor = true;
@@ -140,6 +145,7 @@
 			// 
 			// new_price_tb
 			// 
+			this.new_price_tb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.new_price_tb.Font = new System.Drawing.Font("Arial Narrow", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.new_price_tb.Location = new System.Drawing.Point(154, 221);
 			this.new_price_tb.Name = "new_price_tb";
@@ -159,6 +165,7 @@
 			// 
 			// panel1
 			// 
+			this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.panel1.Controls.Add(this.buy_btn);
 			this.panel1.Controls.Add(this.new_price_tb);
 			this.panel1.Controls.Add(this.clean_btn);
@@ -184,6 +191,7 @@
 			// 
 			// panel2
 			// 
+			this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.panel2.Controls.Add(this.search_tb);
 			this.panel2.Controls.Add(this.sort_by_lb);
 			this.panel2.Controls.Add(this.searchs_cb);
@@ -270,25 +278,37 @@
 			this.sorts_cb.TabIndex = 21;
 			this.sorts_cb.SelectedIndexChanged += new System.EventHandler(this.sorts_cb_SelectedIndexChanged);
 			// 
+			// panel3
+			// 
+			this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.panel3.Controls.Add(this.buy_products_lv);
+			this.panel3.Controls.Add(this.products_lv);
+			this.panel3.Controls.Add(this.load_products_btn);
+			this.panel3.Location = new System.Drawing.Point(5, 50);
+			this.panel3.Name = "panel3";
+			this.panel3.Size = new System.Drawing.Size(904, 686);
+			this.panel3.TabIndex = 27;
+			// 
 			// SellerWindow
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1426, 748);
+			this.Controls.Add(this.panel3);
 			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.panel1);
-			this.Controls.Add(this.load_products_btn);
-			this.Controls.Add(this.buy_products_lv);
-			this.Controls.Add(this.products_lv);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "SellerWindow";
-			this.Text = "SellerWindow";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Text = "Окно продавца";
 			this.Load += new System.EventHandler(this.SellerWindow_Load);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
+			this.panel3.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -314,5 +334,6 @@
 		private System.Windows.Forms.Button search_btn;
 		private System.Windows.Forms.ComboBox sorts_cb;
 		private System.Windows.Forms.Label count_lb;
+		private System.Windows.Forms.Panel panel3;
 	}
 }

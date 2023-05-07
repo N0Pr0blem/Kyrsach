@@ -24,6 +24,7 @@ namespace Kyrsach_nextTry
 
 		private void SellerWindow_Load(object sender, EventArgs e)
 		{
+			SetDefoultColors();
 			searchs_cb.SelectedIndex = 0;
 			sorts_cb.SelectedIndex = 0;
 			ReloadProducts();
@@ -211,6 +212,22 @@ namespace Kyrsach_nextTry
 				}
 			}
 			Reload_buy_products();
+		}
+		private void SetDefoultColors()
+		{
+			BackColor = MyData.MainBackColor;
+
+			load_products_btn.BackColor = MyData.ButtonBackColor;
+			new_price_btn.BackColor = MyData.ButtonBackColor;
+			buy_btn.BackColor = MyData.ButtonBackColor;
+			clean_btn.BackColor = MyData.ButtonBackColor;
+
+			panel1.BackColor = MyData.PanelBackColor;
+			panel2.BackColor = MyData.PanelBackColor;
+			buy_products_lv.BackColor = MyData.PanelBackColor;
+			products_lv.BackColor = MyData.PanelBackColor;
+
+			foreach (Control c in Controls) c.ForeColor = MyData.MainForeColor;
 		}
 	}
 }

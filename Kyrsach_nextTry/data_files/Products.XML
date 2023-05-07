@@ -2,10 +2,120 @@
 <ArrayOfValueTupleOfProductInt32 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ValueTupleOfProductInt32>
     <Item1>
-      <Name>Анкета</Name>
-      <Price>126</Price>
-      <Info>рпшам</Info>
+      <Name>Корм для котят</Name>
+      <Price>1.25</Price>
+      <Info>Whiskas Корм консервированный для котят (рагу с ягненком), 75г</Info>
+      <ImagePath>D:\BSUIR time\Kyrsach_nextTry\Kyrsach_nextTry\data_files\Images\_thumb_800x800xin_upload_iblock_782_4660085514142_1.jpg</ImagePath>
     </Item1>
-    <Item2>1234</Item2>
+    <Item2>50</Item2>
+  </ValueTupleOfProductInt32>
+  <ValueTupleOfProductInt32>
+    <Item1>
+      <Name>Лакомство для кошек </Name>
+      <Price>5.12</Price>
+      <Info>For Friends Лакомство для кошек (кабаносы из говядины ), 50г</Info>
+      <ImagePath>D:\BSUIR time\Kyrsach_nextTry\Kyrsach_nextTry\data_files\Images\4815907007979_1.jpg</ImagePath>
+    </Item1>
+    <Item2>7</Item2>
+  </ValueTupleOfProductInt32>
+  <ValueTupleOfProductInt32>
+    <Item1>
+      <Name>Наполнитель</Name>
+      <Price>5.99</Price>
+      <Info>Сима Древесный наполнитель</Info>
+      <ImagePath>D:\BSUIR time\Kyrsach_nextTry\Kyrsach_nextTry\data_files\Images\4814676000204_1.jpg</ImagePath>
+    </Item1>
+    <Item2>8</Item2>
+  </ValueTupleOfProductInt32>
+  <ValueTupleOfProductInt32>
+    <Item1>
+      <Name>Корм для петушков</Name>
+      <Price>6.22</Price>
+      <Info>Sera Корм для петушков "bettagran"</Info>
+      <ImagePath>D:\BSUIR time\Kyrsach_nextTry\Kyrsach_nextTry\data_files\Images\4001942001038_1.png</ImagePath>
+    </Item1>
+    <Item2>15</Item2>
+  </ValueTupleOfProductInt32>
+  <ValueTupleOfProductInt32>
+    <Item1>
+      <Name>Лакомства для кроликов </Name>
+      <Price>7.21</Price>
+      <Info>462062 Crispy Sticks палочки-лакомства для кроликов и шиншилл с лесными ягодами 110г</Info>
+      <ImagePath>D:\BSUIR time\Kyrsach_nextTry\Kyrsach_nextTry\data_files\Images\5410340620625_1.jpg</ImagePath>
+    </Item1>
+    <Item2>21</Item2>
+  </ValueTupleOfProductInt32>
+  <ValueTupleOfProductInt32>
+    <Item1>
+      <Name>Корм для попугаев </Name>
+      <Price>9.49</Price>
+      <Info>RIO Корм для волнистых попугаев (линька) Рацион в период линьки – зерновая смесь</Info>
+      <ImagePath>D:\BSUIR time\Kyrsach_nextTry\Kyrsach_nextTry\data_files\Images\_thumb_800x800xin_upload_iblock_ed6_4602533420728_1.png</ImagePath>
+    </Item1>
+    <Item2>23</Item2>
+  </ValueTupleOfProductInt32>
+  <ValueTupleOfProductInt32>
+    <Item1>
+      <Name>Мягкая расческа </Name>
+      <Price>13.29</Price>
+      <Info>Мягкая расческа "TRIXIE", односторонняя, 17x10см (2301)</Info>
+      <ImagePath>D:\BSUIR time\Kyrsach_nextTry\Kyrsach_nextTry\data_files\Images\4011905023014_1.jpg</ImagePath>
+    </Item1>
+    <Item2>4</Item2>
+  </ValueTupleOfProductInt32>
+  <ValueTupleOfProductInt32>
+    <Item1>
+      <Name>Домик для грызунов</Name>
+      <Price>17.59</Price>
+      <Info>TRIXIE домик для грызунов, подвесной, 9x12x16см</Info>
+      <ImagePath>D:\BSUIR time\Kyrsach_nextTry\Kyrsach_nextTry\data_files\Images\4011905062761_1.jpg</ImagePath>
+    </Item1>
+    <Item2>14</Item2>
+  </ValueTupleOfProductInt32>
+  <ValueTupleOfProductInt32>
+    <Item1>
+      <Name>Пеленки для собак </Name>
+      <Price>26.7</Price>
+      <Info>Four pets пеленки для собак 45*60см Продается только упаковкой 30шт</Info>
+      <ImagePath>D:\BSUIR time\Kyrsach_nextTry\Kyrsach_nextTry\data_files\Images\4815907002615_1.jpg</ImagePath>
+    </Item1>
+    <Item2>13</Item2>
+  </ValueTupleOfProductInt32>
+  <ValueTupleOfProductInt32>
+    <Item1>
+      <Name>Капли на холкуф</Name>
+      <Price>28.49</Price>
+      <Info>Адвантикс Капли на холку для собак весом 10-25 кг, 1пип
+</Info>
+      <ImagePath>D:\BSUIR time\Kyrsach_nextTry\Kyrsach_nextTry\data_files\Images\_thumb_800x800xin_upload_iblock_b92_4007221041047_1.jpg</ImagePath>
+    </Item1>
+    <Item2>10</Item2>
+  </ValueTupleOfProductInt32>
+  <ValueTupleOfProductInt32>
+    <Item1>
+      <Name>Клетка для птиц</Name>
+      <Price>74.89</Price>
+      <Info>Клетка для птиц A309, 33x53 см</Info>
+      <ImagePath>D:\BSUIR time\Kyrsach_nextTry\Kyrsach_nextTry\data_files\Images\7be4054d14e1e191f5ff2a9b101da30a.jpg</ImagePath>
+    </Item1>
+    <Item2>3</Item2>
+  </ValueTupleOfProductInt32>
+  <ValueTupleOfProductInt32>
+    <Item1>
+      <Name>Аквариум</Name>
+      <Price>338.39</Price>
+      <Info>Aquael Аквариум Leddy белый, прямоугольный</Info>
+      <ImagePath>D:\BSUIR time\Kyrsach_nextTry\Kyrsach_nextTry\data_files\Images\5905546211116_1.jpg</ImagePath>
+    </Item1>
+    <Item2>2</Item2>
+  </ValueTupleOfProductInt32>
+  <ValueTupleOfProductInt32>
+    <Item1>
+      <Name>Корм для щенков</Name>
+      <Price>32.31</Price>
+      <Info>Brit Корм сухой для щенков крупных и гигантских пород (курица), 3кг</Info>
+      <ImagePath>D:\BSUIR time\Kyrsach_nextTry\Kyrsach_nextTry\data_files\Images\4680265049981_1.jpg</ImagePath>
+    </Item1>
+    <Item2>5</Item2>
   </ValueTupleOfProductInt32>
 </ArrayOfValueTupleOfProductInt32>

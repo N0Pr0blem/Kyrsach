@@ -26,6 +26,7 @@ namespace Kyrsach_nextTry
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
+			SetDefoultColors();
 			EnterAllAccessFromDataToRoleCb();
 			show_all_persons();
 			role_cb.SelectedIndex = 0;
@@ -247,6 +248,27 @@ namespace Kyrsach_nextTry
 			products_pv.Items.Clear();
 			for (int i = 0; i < products.Count; i++) products_pv.Items.Add(products[i].Item1.ToString() + " " + products[i].Item2 + " шт.");
 
+		}
+		private void SetDefoultColors()
+		{
+			BackColor = MyData.MainBackColor;
+
+			change_info_btn.BackColor = MyData.ButtonBackColor;
+			add_btn.BackColor = MyData.ButtonBackColor;
+			add_new_show_btn.BackColor = MyData.ButtonBackColor;
+			change_info_btn.BackColor = MyData.ButtonBackColor;
+			delete_btn.BackColor = MyData.ButtonBackColor;
+			close_users_info_panel_btn.BackColor = MyData.ButtonBackColor;
+
+			products_pv.BackColor = MyData.PanelBackColor;
+			persons_lv.BackColor = MyData.PanelBackColor;
+			add_new_panel.BackColor = MyData.PanelBackColor;
+			add_new_panel.BackColor = MyData.PanelBackColor;
+			users_info_panel.BackColor = MyData.PanelBackColor;
+			info_panel.BackColor = MyData.PanelBackColor;
+			product_info_panel.BackColor = MyData.PanelBackColor;
+
+			foreach (Control c in Controls) c.ForeColor = MyData.MainForeColor;
 		}
 	}
 

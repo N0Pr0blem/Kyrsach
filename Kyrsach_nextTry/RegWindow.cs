@@ -17,6 +17,10 @@ namespace Kyrsach_nextTry
 			InitializeComponent();
 		}
 
+		private void RegWindow_Load(object sender, EventArgs e)
+		{
+			SetDefoultColors();
+		}
 		private void button1_Click(object sender, EventArgs e)
 		{
 			List<User> users = MyData.LoadUsers();
@@ -47,9 +51,19 @@ namespace Kyrsach_nextTry
 				}
 			}
 			if (!flag) {
-				MessageBox.Show("Invalid login or password..!");
+				MessageBox.Show("Неверный логин или пароль..!");
 				password_tb.Text = "";
 			}
+		}
+		private void SetDefoultColors()
+		{
+			BackColor = MyData.MainBackColor;
+
+			button1.BackColor = MyData.ButtonBackColor;
+
+			panel1.BackColor = MyData.PanelBackColor;
+			
+			foreach (Control c in Controls) c.ForeColor = MyData.MainForeColor;
 		}
 	}
 }

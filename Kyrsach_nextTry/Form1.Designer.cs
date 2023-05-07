@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.name_lb = new System.Windows.Forms.Label();
 			this.surname_lb = new System.Windows.Forms.Label();
 			this.login_lb = new System.Windows.Forms.Label();
@@ -42,6 +43,7 @@
 			this.add_btn = new System.Windows.Forms.Button();
 			this.add_new_panel = new System.Windows.Forms.Panel();
 			this.users_info_panel = new System.Windows.Forms.Panel();
+			this.checkBox1 = new System.Windows.Forms.CheckBox();
 			this.close_users_info_panel_btn = new System.Windows.Forms.Button();
 			this.users_password_tb = new System.Windows.Forms.TextBox();
 			this.users_access_tb = new System.Windows.Forms.TextBox();
@@ -77,7 +79,6 @@
 			this.name_info_lb = new System.Windows.Forms.Label();
 			this.count_info_lb = new System.Windows.Forms.Label();
 			this.price_info_lb = new System.Windows.Forms.Label();
-			this.checkBox1 = new System.Windows.Forms.CheckBox();
 			this.add_new_panel.SuspendLayout();
 			this.users_info_panel.SuspendLayout();
 			this.info_panel.SuspendLayout();
@@ -199,6 +200,7 @@
 			// 
 			// add_new_panel
 			// 
+			this.add_new_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.add_new_panel.Controls.Add(this.role_cb);
 			this.add_new_panel.Controls.Add(this.add_btn);
 			this.add_new_panel.Controls.Add(this.name_lb);
@@ -211,13 +213,14 @@
 			this.add_new_panel.Controls.Add(this.name_tb);
 			this.add_new_panel.Controls.Add(this.password_lb);
 			this.add_new_panel.Controls.Add(this.role_lb);
-			this.add_new_panel.Location = new System.Drawing.Point(466, 52);
+			this.add_new_panel.Location = new System.Drawing.Point(463, 52);
 			this.add_new_panel.Name = "add_new_panel";
-			this.add_new_panel.Size = new System.Drawing.Size(481, 684);
+			this.add_new_panel.Size = new System.Drawing.Size(493, 684);
 			this.add_new_panel.TabIndex = 4;
 			// 
 			// users_info_panel
 			// 
+			this.users_info_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.users_info_panel.Controls.Add(this.checkBox1);
 			this.users_info_panel.Controls.Add(this.close_users_info_panel_btn);
 			this.users_info_panel.Controls.Add(this.users_password_tb);
@@ -234,8 +237,18 @@
 			this.users_info_panel.Controls.Add(this.label2);
 			this.users_info_panel.Location = new System.Drawing.Point(463, 51);
 			this.users_info_panel.Name = "users_info_panel";
-			this.users_info_panel.Size = new System.Drawing.Size(483, 689);
+			this.users_info_panel.Size = new System.Drawing.Size(493, 685);
 			this.users_info_panel.TabIndex = 5;
+			// 
+			// checkBox1
+			// 
+			this.checkBox1.AutoSize = true;
+			this.checkBox1.Location = new System.Drawing.Point(437, 288);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(18, 17);
+			this.checkBox1.TabIndex = 6;
+			this.checkBox1.UseVisualStyleBackColor = true;
+			this.checkBox1.CheckedChanged += new System.EventHandler(this.show_password_rb_CheckedChanged);
 			// 
 			// close_users_info_panel_btn
 			// 
@@ -250,6 +263,7 @@
 			// 
 			// users_password_tb
 			// 
+			this.users_password_tb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.users_password_tb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.users_password_tb.Location = new System.Drawing.Point(160, 279);
 			this.users_password_tb.Name = "users_password_tb";
@@ -260,6 +274,7 @@
 			// 
 			// users_access_tb
 			// 
+			this.users_access_tb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.users_access_tb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.users_access_tb.Location = new System.Drawing.Point(160, 240);
 			this.users_access_tb.Name = "users_access_tb";
@@ -280,6 +295,7 @@
 			// 
 			// users_login_tb
 			// 
+			this.users_login_tb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.users_login_tb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.users_login_tb.Location = new System.Drawing.Point(160, 201);
 			this.users_login_tb.Name = "users_login_tb";
@@ -289,6 +305,7 @@
 			// 
 			// users_surname_tb
 			// 
+			this.users_surname_tb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.users_surname_tb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.users_surname_tb.Location = new System.Drawing.Point(160, 161);
 			this.users_surname_tb.Name = "users_surname_tb";
@@ -298,6 +315,7 @@
 			// 
 			// users_name_tb
 			// 
+			this.users_name_tb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.users_name_tb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.users_name_tb.Location = new System.Drawing.Point(160, 123);
 			this.users_name_tb.Name = "users_name_tb";
@@ -367,7 +385,7 @@
 			// 
 			// persons_lv
 			// 
-			this.persons_lv.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.persons_lv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.persons_lv.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.persons_lv.HideSelection = false;
 			this.persons_lv.Location = new System.Drawing.Point(12, 51);
@@ -380,6 +398,7 @@
 			// 
 			// info_panel
 			// 
+			this.info_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.info_panel.Controls.Add(this.search_tb);
 			this.info_panel.Controls.Add(this.sort_by_lb);
 			this.info_panel.Controls.Add(this.add_new_show_btn);
@@ -397,7 +416,7 @@
 			this.search_tb.BackColor = System.Drawing.SystemColors.Control;
 			this.search_tb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.search_tb.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.search_tb.Location = new System.Drawing.Point(894, 3);
+			this.search_tb.Location = new System.Drawing.Point(1084, 3);
 			this.search_tb.Name = "search_tb";
 			this.search_tb.Size = new System.Drawing.Size(191, 34);
 			this.search_tb.TabIndex = 24;
@@ -406,7 +425,7 @@
 			// 
 			this.sort_by_lb.AutoSize = true;
 			this.sort_by_lb.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.sort_by_lb.Location = new System.Drawing.Point(344, 7);
+			this.sort_by_lb.Location = new System.Drawing.Point(534, 7);
 			this.sort_by_lb.Name = "sort_by_lb";
 			this.sort_by_lb.Size = new System.Drawing.Size(138, 28);
 			this.sort_by_lb.TabIndex = 3;
@@ -415,9 +434,9 @@
 			// add_new_show_btn
 			// 
 			this.add_new_show_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.add_new_show_btn.Location = new System.Drawing.Point(3, 3);
+			this.add_new_show_btn.Location = new System.Drawing.Point(3, 2);
 			this.add_new_show_btn.Name = "add_new_show_btn";
-			this.add_new_show_btn.Size = new System.Drawing.Size(304, 36);
+			this.add_new_show_btn.Size = new System.Drawing.Size(450, 36);
 			this.add_new_show_btn.TabIndex = 5;
 			this.add_new_show_btn.Text = "Добавить";
 			this.add_new_show_btn.UseVisualStyleBackColor = true;
@@ -433,7 +452,7 @@
             "Имени",
             "Цене",
             "Количеству"});
-			this.searchs_cb.Location = new System.Drawing.Point(766, 3);
+			this.searchs_cb.Location = new System.Drawing.Point(956, 3);
 			this.searchs_cb.Name = "searchs_cb";
 			this.searchs_cb.Size = new System.Drawing.Size(121, 36);
 			this.searchs_cb.TabIndex = 23;
@@ -442,7 +461,7 @@
 			// 
 			this.search_by_lb.AutoSize = true;
 			this.search_by_lb.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.search_by_lb.Location = new System.Drawing.Point(667, 7);
+			this.search_by_lb.Location = new System.Drawing.Point(857, 7);
 			this.search_by_lb.Name = "search_by_lb";
 			this.search_by_lb.Size = new System.Drawing.Size(93, 28);
 			this.search_by_lb.TabIndex = 3;
@@ -451,7 +470,7 @@
 			// search_btn
 			// 
 			this.search_btn.Font = new System.Drawing.Font("Bebas Neue Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.search_btn.Location = new System.Drawing.Point(1091, 3);
+			this.search_btn.Location = new System.Drawing.Point(1281, 3);
 			this.search_btn.Name = "search_btn";
 			this.search_btn.Size = new System.Drawing.Size(37, 36);
 			this.search_btn.TabIndex = 22;
@@ -472,7 +491,7 @@
             "Цене ↓",
             "Количеству ↑",
             "Количеству ↓"});
-			this.sorts_cb.Location = new System.Drawing.Point(488, 3);
+			this.sorts_cb.Location = new System.Drawing.Point(678, 3);
 			this.sorts_cb.Name = "sorts_cb";
 			this.sorts_cb.Size = new System.Drawing.Size(173, 36);
 			this.sorts_cb.TabIndex = 21;
@@ -480,6 +499,7 @@
 			// 
 			// products_pv
 			// 
+			this.products_pv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.products_pv.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.products_pv.HideSelection = false;
 			this.products_pv.Location = new System.Drawing.Point(962, 51);
@@ -492,6 +512,7 @@
 			// 
 			// product_info_panel
 			// 
+			this.product_info_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.product_info_panel.Controls.Add(this.pictureBox1);
 			this.product_info_panel.Controls.Add(this.info_info_lb);
 			this.product_info_panel.Controls.Add(this.label7);
@@ -503,13 +524,14 @@
 			this.product_info_panel.Controls.Add(this.name_info_lb);
 			this.product_info_panel.Controls.Add(this.count_info_lb);
 			this.product_info_panel.Controls.Add(this.price_info_lb);
-			this.product_info_panel.Location = new System.Drawing.Point(469, 51);
+			this.product_info_panel.Location = new System.Drawing.Point(463, 51);
 			this.product_info_panel.Name = "product_info_panel";
-			this.product_info_panel.Size = new System.Drawing.Size(480, 685);
+			this.product_info_panel.Size = new System.Drawing.Size(493, 685);
 			this.product_info_panel.TabIndex = 29;
 			// 
 			// pictureBox1
 			// 
+			this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.pictureBox1.Location = new System.Drawing.Point(111, 150);
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.Size = new System.Drawing.Size(267, 240);
@@ -519,6 +541,7 @@
 			// 
 			// info_info_lb
 			// 
+			this.info_info_lb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.info_info_lb.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.info_info_lb.Location = new System.Drawing.Point(112, 404);
 			this.info_info_lb.Name = "info_info_lb";
@@ -618,16 +641,6 @@
 			this.price_info_lb.TabIndex = 15;
 			this.price_info_lb.Text = "_";
 			// 
-			// checkBox1
-			// 
-			this.checkBox1.AutoSize = true;
-			this.checkBox1.Location = new System.Drawing.Point(437, 288);
-			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(18, 17);
-			this.checkBox1.TabIndex = 6;
-			this.checkBox1.UseVisualStyleBackColor = true;
-			this.checkBox1.CheckedChanged += new System.EventHandler(this.show_password_rb_CheckedChanged);
-			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -636,13 +649,15 @@
 			this.Controls.Add(this.persons_lv);
 			this.Controls.Add(this.products_pv);
 			this.Controls.Add(this.info_panel);
-			this.Controls.Add(this.add_new_panel);
 			this.Controls.Add(this.product_info_panel);
 			this.Controls.Add(this.users_info_panel);
+			this.Controls.Add(this.add_new_panel);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "Form1";
-			this.Text = "Admin window";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Text = "Окно администратора";
 			this.Load += new System.EventHandler(this.Form1_Load);
 			this.add_new_panel.ResumeLayout(false);
 			this.add_new_panel.PerformLayout();

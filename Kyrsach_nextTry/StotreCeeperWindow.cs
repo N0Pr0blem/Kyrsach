@@ -27,6 +27,7 @@ namespace Kyrsach_nextTry
 
 		private void StotreCeeperWindow_Load(object sender, EventArgs e)
 		{
+			SetDefoultColors();
 			sorts_cb.SelectedIndex = 0;
 			searchs_cb.SelectedIndex = 0;
 			ReloadProducts();
@@ -92,7 +93,7 @@ namespace Kyrsach_nextTry
 		{
 			product_info_panel.Visible = true;
 			add_new_panel.Visible = false;
-			products = MyData.LoadProducts();
+			products = Sort_list(MyData.LoadProducts());
 			product_index = products_pv.Items.IndexOf(products_pv.SelectedItems[0]);
 			product = products[product_index];
 			Reload_info();
@@ -194,6 +195,7 @@ namespace Kyrsach_nextTry
 		private void Add_new_btn(object sender, EventArgs e)
 		{
 			add_new_panel.Visible = true;
+			product_info_panel.Visible=false;
 		}
 
 		private void new_info_rtb_TextChanged(object sender, EventArgs e)
@@ -265,7 +267,7 @@ namespace Kyrsach_nextTry
 
 		private void search_btn_Click(object sender, EventArgs e)
 		{
-			products = MyData.LoadProducts();
+			products = Sort_list(MyData.LoadProducts());
 			if (search_tb.Text != "")
 			{
 				List<(Product, int)> search = new List<(Product, int)>();
@@ -293,5 +295,28 @@ namespace Kyrsach_nextTry
 			for (int i = 0; i < products.Count; i++) products_pv.Items.Add(products[i].Item1.ToString() + " " + products[i].Item2 + " шт.");
 
 		}
+		private void SetDefoultColors()
+		{
+			BackColor = MyData.MainBackColor;
+
+			button1.BackColor = MyData.ButtonBackColor;
+			button2.BackColor = MyData.ButtonBackColor;
+			button3.BackColor = MyData.ButtonBackColor;
+			button4.BackColor = MyData.ButtonBackColor;
+			change_info_btn.BackColor = MyData.ButtonBackColor;
+			add_new_btn.BackColor = MyData.ButtonBackColor;
+			choose_btn.BackColor = MyData.ButtonBackColor;
+			add_btn.BackColor = MyData.ButtonBackColor;
+			load_products_btn.BackColor = MyData.ButtonBackColor;
+
+			add_products_lv.BackColor = MyData.PanelBackColor;
+			products_pv.BackColor = MyData.PanelBackColor;
+			add_new_panel.BackColor = MyData.PanelBackColor;
+			panel1.BackColor = MyData.PanelBackColor;
+			product_info_panel.BackColor = MyData.PanelBackColor;
+
+			foreach (Control c in Controls) c.ForeColor = MyData.MainForeColor;
+		}
 	}
+	
 }

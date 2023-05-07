@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,11 @@ namespace Kyrsach_nextTry
 	{
 		public enum Access { ADMIN, SELLER, STOREKEEPER }
 		public static string[] Sorts = {"Назвнию ↑","Назвнию ↓","Цене ↑","Цене ↓","Количеству ↑","Количеству ↓"};
+		public static Color MainForeColor = Color.FromArgb(62, 62, 62);
+		public static Color ButtonBackColor = Color.FromArgb(255, 214, 43);
+		public static Color PanelBackColor = Color.FromArgb(255, 252, 242);
+		public static Color MenuBackColor = Color.FromArgb(255, 214, 43);
+		public static Color MainBackColor = Color.White;
 
 		public static void SaveList(List<User> list)
 		{
